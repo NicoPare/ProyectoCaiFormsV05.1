@@ -24,15 +24,21 @@ namespace ProyectoCaiFormsV05._1
         {
             foreach (var alojamiento in alojamientos)
             {
-                string ciudad = alojamiento.CodCiudad;
-                DateTime fechaEntrada = alojamiento.FechaIngreso;
+                string codCiudad = alojamiento.CodCiudad;
+                DateTime fechaIngreso = alojamiento.FechaIngreso;
                 DateTime fechaEgreso = alojamiento.FechaSalida;
-                string nombre = alojamiento.NombreAlojamiento;
-                decimal precioPorNoche = alojamiento.Tarifa;                
+                string nombreAlojamiento = alojamiento.NombreAlojamiento;
+                decimal tarifa = alojamiento.Tarifa;
+                string habitacion = alojamiento.NombreHabitacion;
+                int calificacion = alojamiento.Calificacion;
 
-                ListViewItem item = new ListViewItem(ciudad);
-                item.SubItems.Add(ciudad);
-                item.SubItems.Add(precioPorNoche.ToString("C"));
+                ListViewItem item = new ListViewItem(codCiudad);
+                item.SubItems.Add(fechaIngreso.ToString("yyyy-MM-dd"));
+                item.SubItems.Add(fechaEgreso.ToString("yyyy-MM-dd"));
+                item.SubItems.Add(nombreAlojamiento);
+                item.SubItems.Add(tarifa.ToString("C"));
+                item.SubItems.Add(habitacion);
+                item.SubItems.Add(calificacion.ToString());
 
                 lstAlojamientos.Items.Add(item);
             }

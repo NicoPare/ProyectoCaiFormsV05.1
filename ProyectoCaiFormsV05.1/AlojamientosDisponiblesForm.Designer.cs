@@ -6,6 +6,14 @@
         /// Required designer variable.
         /// </summary>
         private System.ComponentModel.IContainer components = null;
+        private System.Windows.Forms.ListView lstAlojamientos;
+        private System.Windows.Forms.ColumnHeader colCodCiudad;
+        private System.Windows.Forms.ColumnHeader colFechaIngreso;
+        private System.Windows.Forms.ColumnHeader colFechaEgreso;
+        private System.Windows.Forms.ColumnHeader colNombreAlojamiento;
+        private System.Windows.Forms.ColumnHeader colTarifa;
+        private System.Windows.Forms.ColumnHeader colHabitacion;
+        private System.Windows.Forms.ColumnHeader colCalificacion;
 
         /// <summary>
         /// Clean up any resources being used.
@@ -22,57 +30,78 @@
 
         private void InitializeComponent()
         {
-            lstAlojamientos = new ListView();
-            colNombre = new ColumnHeader();
-            colDireccion = new ColumnHeader();
-            colPrecioPorNoche = new ColumnHeader();
-            SuspendLayout();
+            this.lstAlojamientos = new System.Windows.Forms.ListView();
+            this.colCodCiudad = ((System.Windows.Forms.ColumnHeader)(new System.Windows.Forms.ColumnHeader()));
+            this.colFechaIngreso = ((System.Windows.Forms.ColumnHeader)(new System.Windows.Forms.ColumnHeader()));
+            this.colFechaEgreso = ((System.Windows.Forms.ColumnHeader)(new System.Windows.Forms.ColumnHeader()));
+            this.colNombreAlojamiento = ((System.Windows.Forms.ColumnHeader)(new System.Windows.Forms.ColumnHeader()));
+            this.colTarifa = ((System.Windows.Forms.ColumnHeader)(new System.Windows.Forms.ColumnHeader()));
+            this.colHabitacion = ((System.Windows.Forms.ColumnHeader)(new System.Windows.Forms.ColumnHeader()));
+            this.colCalificacion = ((System.Windows.Forms.ColumnHeader)(new System.Windows.Forms.ColumnHeader()));
+            this.SuspendLayout();
             // 
             // lstAlojamientos
             // 
-            lstAlojamientos.Columns.AddRange(new ColumnHeader[] { colNombre, colDireccion, colPrecioPorNoche });
-            lstAlojamientos.Dock = DockStyle.Fill;
-            lstAlojamientos.FullRowSelect = true;
-            lstAlojamientos.GridLines = true;
-            lstAlojamientos.Location = new Point(0, 0);
-            lstAlojamientos.Margin = new Padding(4, 3, 4, 3);
-            lstAlojamientos.Name = "lstAlojamientos";
-            lstAlojamientos.Size = new Size(612, 346);
-            lstAlojamientos.TabIndex = 0;
-            lstAlojamientos.UseCompatibleStateImageBehavior = false;
-            lstAlojamientos.View = View.Details;
+            this.lstAlojamientos.Columns.AddRange(new System.Windows.Forms.ColumnHeader[] {
+            this.colCodCiudad,
+            this.colFechaIngreso,
+            this.colFechaEgreso,
+            this.colNombreAlojamiento,
+            this.colTarifa,
+            this.colHabitacion,
+            this.colCalificacion});
+            this.lstAlojamientos.Dock = System.Windows.Forms.DockStyle.Fill;
+            this.lstAlojamientos.FullRowSelect = true;
+            this.lstAlojamientos.GridLines = true;
+            this.lstAlojamientos.HideSelection = false;
+            this.lstAlojamientos.Location = new System.Drawing.Point(0, 0);
+            this.lstAlojamientos.Name = "lstAlojamientos";
+            this.lstAlojamientos.Size = new System.Drawing.Size(800, 450);
+            this.lstAlojamientos.TabIndex = 0;
+            this.lstAlojamientos.UseCompatibleStateImageBehavior = false;
+            this.lstAlojamientos.View = System.Windows.Forms.View.Details;
             // 
-            // colNombre
+            // colCodCiudad
             // 
-            colNombre.Text = "Nombre";
-            colNombre.Width = 150;
+            this.colCodCiudad.Text = "CodCiudad";
             // 
-            // colDireccion
+            // colFechaIngreso
             // 
-            colDireccion.Text = "Dirección";
-            colDireccion.Width = 200;
+            this.colFechaIngreso.Text = "Fecha Ingreso";
             // 
-            // colPrecioPorNoche
+            // colFechaEgreso
             // 
-            colPrecioPorNoche.Text = "Precio por noche";
-            colPrecioPorNoche.Width = 100;
+            this.colFechaEgreso.Text = "Fecha Egreso";
+            // 
+            // colNombreAlojamiento
+            // 
+            this.colNombreAlojamiento.Text = "Nombre Alojamiento";
+            // 
+            // colTarifa
+            // 
+            this.colTarifa.Text = "Tarifa habitación por noche";
+            // 
+            // colHabitacion
+            // 
+            this.colHabitacion.Text = "Habitación";
+            // 
+            // colCalificacion
+            // 
+            this.colCalificacion.Text = "Calificacion";
             // 
             // AlojamientosDisponiblesForm
             // 
-            AutoScaleDimensions = new SizeF(7F, 15F);
-            AutoScaleMode = AutoScaleMode.Font;
-            ClientSize = new Size(612, 346);
-            Controls.Add(lstAlojamientos);
-            Margin = new Padding(4, 3, 4, 3);
-            Name = "AlojamientosDisponiblesForm";
-            Text = "Alojamientos Disponibles";
-            Load += AlojamientosDisponiblesForm_Load;
-            ResumeLayout(false);
+            this.AutoScaleDimensions = new System.Drawing.SizeF(6F, 13F);
+            this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
+            this.ClientSize = new System.Drawing.Size(800, 450);
+            this.Controls.Add(this.lstAlojamientos);
+            this.Name = "AlojamientosDisponiblesForm";
+            this.Text = "Alojamientos Disponibles";
+            this.Load += new System.EventHandler(this.AlojamientosDisponiblesForm_Load);
+            this.ResumeLayout(false);
+
         }
 
-        private ListView lstAlojamientos;
-        private ColumnHeader colNombre;
-        private ColumnHeader colDireccion;
-        private ColumnHeader colPrecioPorNoche;
+        
     }
 }

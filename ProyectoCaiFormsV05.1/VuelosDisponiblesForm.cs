@@ -16,27 +16,32 @@ namespace ProyectoCaiFormsV05._1
         {
             InitializeComponent();
 
-            // Mostrar los vuelos disponibles en la lista
+            // Configurar las columnas del DataGridView
+            dgvVuelosDisponibles.Columns.Add("Origen", "Origen");
+            dgvVuelosDisponibles.Columns.Add("Destino", "Destino");
+            dgvVuelosDisponibles.Columns.Add("FechaHoraSalida", "Fecha y Hora de Salida");
+            dgvVuelosDisponibles.Columns.Add("FechaHoraArribo", "Fecha y Hora de Arribo");
+            dgvVuelosDisponibles.Columns.Add("Aerolinea", "Aerolínea");
+            dgvVuelosDisponibles.Columns.Add("Precio", "Precio");
+            dgvVuelosDisponibles.Columns.Add("ClaseVuelo", "Clase de Vuelo");
+            dgvVuelosDisponibles.Columns.Add("TipoPasajero", "Tipo de Pasajero");
+
+            // Mostrar los vuelos disponibles en el DataGridView
             foreach (var vuelo in vuelosDisponibles)
             {
-                string vueloInfo = $"Código de vuelo: {vuelo.CodVuelo}\n" +
-                    $"Origen: {vuelo.Origen}\n" +
-                    $"Destino: {vuelo.Destino}\n" +
-                    $"Fecha y hora de salida: {vuelo.FechaHoraSalida}\n" +
-                    $"Fecha y hora de arribo: {vuelo.FechaHoraArribo}\n" +
-                    $"Aerolínea: {vuelo.Aerolinea}\n" +
-                    "Tarifas:\n";
-
                 foreach (var tarifa in vuelo.Tarifas)
                 {
-                    string tarifaInfo = $"  Precio: {tarifa.Precio}\n" +
-                        $"  Clase de vuelo: {tarifa.ClaseVuelo}\n" +
-                        $"  Tipo de pasajero: {tarifa.TipoPasajero}\n";
-                    vueloInfo += tarifaInfo;
+                    dgvVuelosDisponibles.Rows.Add(
+                        vuelo.Origen,
+                        vuelo.Destino,
+                        vuelo.FechaHoraSalida,
+                        vuelo.FechaHoraArribo,
+                        vuelo.Aerolinea,
+                        tarifa.Precio,
+                        tarifa.ClaseVuelo,
+                        tarifa.TipoPasajero
+                    );
                 }
-
-                lstVuelosDisponibles.Items.Add(vueloInfo);
-                lstVuelosDisponibles.Items.Add("=====================================");
             }
         }
     }

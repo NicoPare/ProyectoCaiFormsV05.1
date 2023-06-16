@@ -1,0 +1,46 @@
+﻿{
+  "aeropuertos": [
+    {
+      "codigo": "EZE",
+      "nombre": "Aeropuerto Internacional Ministro Pistarini",
+      "ciudad": "Buenos Aires",
+      "pais": "Argentina"
+    },
+    {
+      "codigo": "LHR",
+      "nombre": "Aeropuerto de Londres Heathrow",
+      "ciudad": "Londres",
+      "pais": "Reino Unido"
+    },
+    {
+      "codigo": "MAD",
+      "nombre": "Aeropuerto Adolfo Suárez Madrid-Barajas",
+      "ciudad": "Madrid",
+      "pais": "España"
+    },
+    {
+      "codigo": "BCN",
+      "nombre": "Aeropuerto de Barcelona-El Prat",
+      "ciudad": "Barcelona",
+      "pais": "España"
+    },
+    {
+      "codigo": "HND",
+      "nombre": "Aeropuerto Internacional de Haneda",
+      "ciudad": "Tokio",
+      "pais": "Japón"
+    },
+    {
+      "codigo": "SYD",
+      "nombre": "Aeropuerto Internacional Kingsford Smith",
+      "ciudad": "Sídney",
+      "pais": "Australia"
+    },
+    {
+      "codigo": "MIA",
+      "nombre": "Aeropuerto Internacional de Miami",
+      "ciudad": "Miami",
+      "pais": "Estados Unidos"
+    }
+  ]
+}

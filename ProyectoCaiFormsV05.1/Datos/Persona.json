@@ -1,0 +1,112 @@
+﻿[
+  {
+    "CodPersona": 1,
+    "Nombre": "Santiago",
+    "Apellido": "Repetto",
+    "TipoDocumento": "dni",
+    "Documento": 40111111,
+    "Tarjeta": "1111 1111 1111 1111",
+    "Email": "sr@gmail.com",
+    "TipoPasajero": "Adulto"
+  },
+  {
+    "CodPersona": 2,
+    "Nombre": "Santino",
+    "Apellido": "Gonzales",
+    "TipoDocumento": "dni",
+    "Documento": 40111112,
+    "Tarjeta": null,
+    "Email": null,
+    "TipoPasajero": "Menor"
+  },
+  {
+    "CodPersona": 3,
+    "Nombre": "Juan",
+    "Apellido": "Fernandez",
+    "TipoDocumento": "dni",
+    "Documento": 40111113,
+    "Tarjeta": null,
+    "Email": null,
+    "TipoPasajero": "Infante"
+  },
+  {
+    "CodPersona": 4,
+    "Nombre": "Juan Pedro",
+    "Apellido": "Hernandez",
+    "TipoDocumento": "dni",
+    "Documento": 40111114,
+    "Tarjeta": "1112 1111 1111 1111",
+    "Email": "juanpedro.hernandez@outlook.com",
+    "TipoPasajero": "Adulto"
+  },
+  {
+    "CodPersona": 5,
+    "Nombre": "Nicolas",
+    "Apellido": "Lusuairaga",
+    "TipoDocumento": "dni",
+    "Documento": 40111115,
+    "Tarjeta": "1113 1111 1111 1111",
+    "Email": "nicolas.lusu@outlook.com",
+    "TipoPasajero": "Adulto"
+  },
+  {
+    "CodPersona": 6,
+    "Nombre": "Gonzalo",
+    "Apellido": "Reprete",
+    "TipoDocumento": "dni",
+    "Documento": 40111116,
+    "Tarjeta": "1113 1111 1111 1111",
+    "Email": "gonza.reprete@gmail.com",
+    "TipoPasajero": "Adulto"
+  },
+  {
+    "CodPersona": 7,
+    "Nombre": "Agustina",
+    "Apellido": "Lucurana",
+    "TipoDocumento": "Dni",
+    "Documento": 40111117,
+    "Tarjeta": "1114 1111 1111 1111",
+    "Email": "agus.lucu@outlook.com",
+    "TipoPasajero": "Adulto"
+  },
+  {
+    "CodPersona": 8,
+    "Nombre": "Juana",
+    "Apellido": "Uranga",
+    "TipoDocumento": "dni",
+    "Documento": 40111118,
+    "Tarjeta": "1117 1111 1111 1111",
+    "Email": "juani.uru@gmail.com",
+    "TipoPasajero": "Adulto"
+  },
+  {
+    "CodPersona": 9,
+    "Nombre": "Juan Cruz",
+    "Apellido": "Pare",
+    "TipoDocumento": "dni",
+    "Documento": 40111119,
+    "Tarjeta": "1112 5111 1111 1111",
+    "Email": "jc.pare@gmail.com",
+    "TipoPasajero": "Adulto"
+  },
+  {
+    "CodPersona": 10,
+    "Nombre": "Ignacio",
+    "Apellido": "Pera",
+    "TipoDocumento": "dni",
+    "Documento": 40111120,
+    "Tarjeta": "1113 5211 1111 1111",
+    "Email": "nacho.pera@gmail.com",
+    "TipoPasajero": "Adulto"
+  },
+  {
+    "CodPersona": 11,
+    "Nombre": "Sofia",
+    "Apellido": "Carro",
+    "TipoDocumento": "dni",
+    "Documento": 40111121,
+    "Tarjeta": "1113 5311 1111 1111",
+    "Email": "sofi.carro@gmail.com",
+    "TipoPasajero": "Adulto"
+  }
+]

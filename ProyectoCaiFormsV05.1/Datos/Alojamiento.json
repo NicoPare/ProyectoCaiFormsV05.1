@@ -1,0 +1,438 @@
+﻿[
+  {
+    "CodHotel": "H-1",
+    "NombreAlojamiento": "Hotel Este",
+    "CodCiudad": "BSA",
+    "Direccion": "Av. Libertador, 111, 1458, 58987, 49741",
+    "Calificacion": 3,
+    "HabitacionAlojamiento": [
+      {
+        "NombreHabitacion": "Doble Normal",
+        "Tarifa": 9000,
+        "CapacidadAdultos": 2,
+        "CapacidadMenores": 0,
+        "CapacidadInfantes": 0,
+        "DisponibilidadHabitacion": [
+          {
+            "Fecha": "06/01/2023",
+            "CantidadDisponible": 9
+          },
+          {
+            "Fecha": "06/02/2023",
+            "CantidadDisponible": 9
+          },
+          {
+            "Fecha": "06/03/2023",
+            "CantidadDisponible": 10
+          },
+          {
+            "Fecha": "06/04/2023",
+            "CantidadDisponible": 10
+          }
+        ]
+      },
+      {
+        "NombreHabitacion": "Doble Suite",
+        "Tarifa": 15000,
+        "CapacidadAdultos": 2,
+        "CapacidadMenores": 0,
+        "CapacidadInfantes": 0,
+        "DisponibilidadHabitacion": [
+          {
+            "Fecha": "06/01/2023",
+            "CantidadDisponible": 3
+          },
+          {
+            "Fecha": "06/02/2023",
+            "CantidadDisponible": 4
+          },
+          {
+            "Fecha": "06/03/2023",
+            "CantidadDisponible": 5
+          },
+          {
+            "Fecha": "06/04/2023",
+            "CantidadDisponible": 5
+          }
+        ]
+      },
+      {
+        "NombreHabitacion": "Familiar",
+        "Tarifa": 12000,
+        "CapacidadAdultos": 2,
+        "CapacidadMenores": 2,
+        "CapacidadInfantes": 1,
+        "DisponibilidadHabitacion": [
+          {
+            "Fecha": "06/01/2023",
+            "CantidadDisponible": 10
+          },
+          {
+            "Fecha": "06/02/2023",
+            "CantidadDisponible": 8
+          },
+          {
+            "Fecha": "06/03/2023",
+            "CantidadDisponible": 8
+          },
+          {
+            "Fecha": "06/04/2023",
+            "CantidadDisponible": 9
+          }
+        ]
+      },
+      {
+        "NombreHabitacion": "Familiar Suite",
+        "Tarifa": 24000,
+        "CapacidadAdultos": 2,
+        "CapacidadMenores": 2,
+        "CapacidadInfantes": 1,
+        "DisponibilidadHabitacion": [
+          {
+            "Fecha": "06/01/2023",
+            "CantidadDisponible": 5
+          },
+          {
+            "Fecha": "06/02/2023",
+            "CantidadDisponible": 4
+          },
+          {
+            "Fecha": "06/03/2023",
+            "CantidadDisponible": 3
+          },
+          {
+            "Fecha": "06/04/2023",
+            "CantidadDisponible": 4
+          }
+        ]
+      }
+    ]
+  },
+  {
+    "CodHotel": "H-2",
+    "NombreAlojamiento": "Hotel Sur",
+    "CodCiudad": "BRC",
+    "Direccion": "Av. Exequiel Bustillo, 2598, 15879, 65874",
+    "Calificacion": 4,
+    "HabitacionAlojamiento": [
+      {
+        "NombreHabitacion": "Simple",
+        "Tarifa": 7000,
+        "CapacidadAdultos": 1,
+        "CapacidadMenores": 0,
+        "CapacidadInfantes": 0,
+        "DisponibilidadHabitacion": [
+          {
+            "Fecha": "06/01/2023",
+            "CantidadDisponible": 8
+          },
+          {
+            "Fecha": "06/02/2023",
+            "CantidadDisponible": 6
+          },
+          {
+            "Fecha": "06/03/2023",
+            "CantidadDisponible": 6
+          },
+          {
+            "Fecha": "06/04/2023",
+            "CantidadDisponible": 5
+          }
+        ]
+      },
+      {
+        "NombreHabitacion": "Simple Suite",
+        "Tarifa": 11000,
+        "CapacidadAdultos": 1,
+        "CapacidadMenores": 0,
+        "CapacidadInfantes": 0,
+        "DisponibilidadHabitacion": [
+          {
+            "Fecha": "06/01/2023",
+            "CantidadDisponible": 4
+          },
+          {
+            "Fecha": "06/02/2023",
+            "CantidadDisponible": 3
+          },
+          {
+            "Fecha": "06/03/2023",
+            "CantidadDisponible": 4
+          },
+          {
+            "Fecha": "06/04/2023",
+            "CantidadDisponible": 4
+          }
+        ]
+      },
+      {
+        "NombreHabitacion": "Clásica",
+        "Tarifa": 10000,
+        "CapacidadAdultos": 2,
+        "CapacidadMenores": 0,
+        "CapacidadInfantes": 0,
+        "DisponibilidadHabitacion": [
+          {
+            "Fecha": "06/01/2023",
+            "CantidadDisponible": 8
+          },
+          {
+            "Fecha": "06/02/2023",
+            "CantidadDisponible": 5
+          },
+          {
+            "Fecha": "06/03/2023",
+            "CantidadDisponible": 5
+          },
+          {
+            "Fecha": "06/04/2023",
+            "CantidadDisponible": 5
+          }
+        ]
+      },
+      {
+        "NombreHabitacion": "Premier",
+        "Tarifa": 15000,
+        "CapacidadAdultos": 2,
+        "CapacidadMenores": 0,
+        "CapacidadInfantes": 0,
+        "DisponibilidadHabitacion": [
+          {
+            "Fecha": "06/01/2023",
+            "CantidadDisponible": 4
+          },
+          {
+            "Fecha": "06/02/2023",
+            "CantidadDisponible": 1
+          },
+          {
+            "Fecha": "06/03/2023",
+            "CantidadDisponible": 1
+          },
+          {
+            "Fecha": "06/04/2023",
+            "CantidadDisponible": 1
+          }
+        ]
+      },
+      {
+        "NombreHabitacion": "Clásica - Familiar",
+        "Tarifa": 14000,
+        "CapacidadAdultos": 2,
+        "CapacidadMenores": 2,
+        "CapacidadInfantes": 1,
+        "DisponibilidadHabitacion": [
+          {
+            "Fecha": "06/01/2023",
+            "CantidadDisponible": 5
+          },
+          {
+            "Fecha": "06/02/2023",
+            "CantidadDisponible": 3
+          },
+          {
+            "Fecha": "06/03/2023",
+            "CantidadDisponible": 5
+          },
+          {
+            "Fecha": "06/04/2023",
+            "CantidadDisponible": 5
+          }
+        ]
+      }
+    ]
+  },
+  {
+    "CodHotel": "H-3",
+    "NombreAlojamiento": "Hotel Norte",
+    "CodCiudad": "SLT",
+    "Direccion": "Av. Entre Ríos, 9845, 98784, 54879",
+    "Calificacion": 3,
+    "HabitacionAlojamiento": [
+      {
+        "NombreHabitacion": "Doble Superior",
+        "Tarifa": 16000,
+        "CapacidadAdultos": 2,
+        "CapacidadMenores": 2,
+        "CapacidadInfantes": 2,
+        "DisponibilidadHabitacion": [
+          {
+            "Fecha": "06/01/2023",
+            "CantidadDisponible": 5
+          },
+          {
+            "Fecha": "06/02/2023",
+            "CantidadDisponible": 2
+          },
+          {
+            "Fecha": "06/03/2023",
+            "CantidadDisponible": 2
+          },
+          {
+            "Fecha": "06/04/2023",
+            "CantidadDisponible": 2
+          }
+        ]
+      },
+      {
+        "NombreHabitacion": "Superior",
+        "Tarifa": 13000,
+        "CapacidadAdultos": 2,
+        "CapacidadMenores": 0,
+        "CapacidadInfantes": 0,
+        "DisponibilidadHabitacion": [
+          {
+            "Fecha": "06/01/2023",
+            "CantidadDisponible": 5
+          },
+          {
+            "Fecha": "06/02/2023",
+            "CantidadDisponible": 4
+          },
+          {
+            "Fecha": "06/03/2023",
+            "CantidadDisponible": 4
+          },
+          {
+            "Fecha": "06/04/2023",
+            "CantidadDisponible": 4
+          }
+        ]
+      },
+      {
+        "NombreHabitacion": "Suite Prestige",
+        "Tarifa": 20000,
+        "CapacidadAdultos": 2,
+        "CapacidadMenores": 0,
+        "CapacidadInfantes": 0,
+        "DisponibilidadHabitacion": [
+          {
+            "Fecha": "06/01/2023",
+            "CantidadDisponible": 3
+          },
+          {
+            "Fecha": "06/02/2023",
+            "CantidadDisponible": 2
+          },
+          {
+            "Fecha": "06/03/2023",
+            "CantidadDisponible": 2
+          },
+          {
+            "Fecha": "06/04/2023",
+            "CantidadDisponible": 3
+          }
+        ]
+      }
+    ]
+  },
+  {
+    "CodHotel": "H-4",
+    "NombreAlojamiento": "Hotel Oeste",
+    "CodCiudad": "MDZ",
+    "Direccion": "Av. San Martín, 1589, 75418, 54387",
+    "Calificacion": 5,
+    "HabitacionAlojamiento": [
+      {
+        "NombreHabitacion": "Indiviudal Clásica",
+        "Tarifa": 9000,
+        "CapacidadAdultos": 1,
+        "CapacidadMenores": 0,
+        "CapacidadInfantes": 0,
+        "DisponibilidadHabitacion": [
+          {
+            "Fecha": "06/01/2023",
+            "CantidadDisponible": 5
+          },
+          {
+            "Fecha": "06/02/2023",
+            "CantidadDisponible": 2
+          },
+          {
+            "Fecha": "06/03/2023",
+            "CantidadDisponible": 2
+          },
+          {
+            "Fecha": "06/04/2023",
+            "CantidadDisponible": 2
+          }
+        ]
+      },
+      {
+        "NombreHabitacion": "Doble Clásica",
+        "Tarifa": 13000,
+        "CapacidadAdultos": 2,
+        "CapacidadMenores": 0,
+        "CapacidadInfantes": 0,
+        "DisponibilidadHabitacion": [
+          {
+            "Fecha": "06/01/2023",
+            "CantidadDisponible": 5
+          },
+          {
+            "Fecha": "06/02/2023",
+            "CantidadDisponible": 3
+          },
+          {
+            "Fecha": "06/03/2023",
+            "CantidadDisponible": 3
+          },
+          {
+            "Fecha": "06/04/2023",
+            "CantidadDisponible": 4
+          }
+        ]
+      },
+      {
+        "NombreHabitacion": "Familiar Clásica",
+        "Tarifa": 15000,
+        "CapacidadAdultos": 2,
+        "CapacidadMenores": 2,
+        "CapacidadInfantes": 1,
+        "DisponibilidadHabitacion": [
+          {
+            "Fecha": "06/01/2023",
+            "CantidadDisponible": 5
+          },
+          {
+            "Fecha": "06/02/2023",
+            "CantidadDisponible": 2
+          },
+          {
+            "Fecha": "06/03/2023",
+            "CantidadDisponible": 2
+          },
+          {
+            "Fecha": "06/04/2023",
+            "CantidadDisponible": 2
+          }
+        ]
+      },
+      {
+        "NombreHabitacion": "Doble Suite",
+        "Tarifa": 17000,
+        "CapacidadAdultos": 2,
+        "CapacidadMenores": 0,
+        "CapacidadInfantes": 0,
+        "DisponibilidadHabitacion": [
+          {
+            "Fecha": "06/01/2023",
+            "CantidadDisponible": 3
+          },
+          {
+            "Fecha": "06/02/2023",
+            "CantidadDisponible": 2
+          },
+          {
+            "Fecha": "06/03/2023",
+            "CantidadDisponible": 2
+          },
+          {
+            "Fecha": "06/04/2023",
+            "CantidadDisponible": 2
+          }
+        ]
+      }
+    ]
+  }
+]

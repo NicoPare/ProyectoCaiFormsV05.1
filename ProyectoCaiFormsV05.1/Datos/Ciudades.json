@@ -1,0 +1,24 @@
+﻿{
+  "ciudades": [
+    {
+      "codigo": "BSA",
+      "nombre": "Buenos Aires",
+      "pais": "Argentina"
+    },
+    {
+      "codigo": "BRC",
+      "nombre": "Bariloche",
+      "pais": "Argentina"
+    },
+    {
+      "codigo": "SLT",
+      "nombre": "Salta",
+      "pais": "Argentina"
+    },
+    {
+      "codigo": "MDZ",
+      "nombre": "Mendoza",
+      "pais": "Argentina"
+    }
+  ]
+}

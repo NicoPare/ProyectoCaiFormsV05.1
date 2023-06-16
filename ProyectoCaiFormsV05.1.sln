@@ -1,0 +1,25 @@
+﻿
+Microsoft Visual Studio Solution File, Format Version 12.00
+# Visual Studio Version 17
+VisualStudioVersion = 17.6.33723.286
+MinimumVisualStudioVersion = 10.0.40219.1
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "ProyectoCaiFormsV05.1", "ProyectoCaiFormsV05.1\ProyectoCaiFormsV05.1.csproj", "{F9736B28-9F64-4E08-9D62-103EB148FFDB}"
+EndProject
+Global
+	GlobalSection(SolutionConfigurationPlatforms) = preSolution
+		Debug|Any CPU = Debug|Any CPU
+		Release|Any CPU = Release|Any CPU
+	EndGlobalSection
+	GlobalSection(ProjectConfigurationPlatforms) = postSolution
+		{F9736B28-9F64-4E08-9D62-103EB148FFDB}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{F9736B28-9F64-4E08-9D62-103EB148FFDB}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{F9736B28-9F64-4E08-9D62-103EB148FFDB}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{F9736B28-9F64-4E08-9D62-103EB148FFDB}.Release|Any CPU.Build.0 = Release|Any CPU
+	EndGlobalSection
+	GlobalSection(SolutionProperties) = preSolution
+		HideSolutionNode = FALSE
+	EndGlobalSection
+	GlobalSection(ExtensibilityGlobals) = postSolution
+		SolutionGuid = {C7747169-3A5A-4ED3-9BE2-5E71860B3C6D}
+	EndGlobalSection
+EndGlobal

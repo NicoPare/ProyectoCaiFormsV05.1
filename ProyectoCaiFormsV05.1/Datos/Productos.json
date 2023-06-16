@@ -1,0 +1,1066 @@
+[
+  {
+    "CodProducto": "CMNDQBPF",
+    "Vuelo": {
+      "CodVuelo": "V-1",
+      "Origen": "EZE",
+      "Destino": "LHR",
+      "Aerolinea": "AA",
+      "FechaHoraSalida": "2023-06-01T05:00:00",
+      "FechaHoraArribo": "2023-06-01T06:00:00",
+      "TiempoDeVuelo": "01:00:00",
+      "Tarifa": [
+        {
+          "TipoPasajero": "Adulto",
+          "ClaseVuelo": "Economy",
+          "DisponibilidadVuelo": 10,
+          "Precio": 153050.0
+        },
+        {
+          "TipoPasajero": "Menor",
+          "ClaseVuelo": "Economy",
+          "DisponibilidadVuelo": 10,
+          "Precio": 146520.0
+        },
+        {
+          "TipoPasajero": "Infante",
+          "ClaseVuelo": "Economy",
+          "DisponibilidadVuelo": 5,
+          "Precio": 110000.0
+        },
+        {
+          "TipoPasajero": "Adulto",
+          "ClaseVuelo": "Business",
+          "DisponibilidadVuelo": 5,
+          "Precio": 250000.0
+        },
+        {
+          "TipoPasajero": "Menor",
+          "ClaseVuelo": "Business",
+          "DisponibilidadVuelo": 10,
+          "Precio": 190000.0
+        },
+        {
+          "TipoPasajero": "Infante",
+          "ClaseVuelo": "Business",
+          "DisponibilidadVuelo": 5,
+          "Precio": 140000.0
+        }
+      ]
+    },
+    "Alojamiento": null
+  },
+  {
+    "CodProducto": "II7SX6TZ",
+    "Vuelo": {
+      "CodVuelo": "V-2",
+      "Origen": "EZE",
+      "Destino": "MAD",
+      "Aerolinea": "AA",
+      "FechaHoraSalida": "2023-06-01T08:00:00",
+      "FechaHoraArribo": "2023-06-01T11:00:00",
+      "TiempoDeVuelo": "03:00:00",
+      "Tarifa": [
+        {
+          "TipoPasajero": "Adulto",
+          "ClaseVuelo": "Economy",
+          "DisponibilidadVuelo": 10,
+          "Precio": 185000.0
+        },
+        {
+          "TipoPasajero": "Menor",
+          "ClaseVuelo": "Economy",
+          "DisponibilidadVuelo": 10,
+          "Precio": 155000.0
+        },
+        {
+          "TipoPasajero": "Infante",
+          "ClaseVuelo": "Economy",
+          "DisponibilidadVuelo": 5,
+          "Precio": 115000.0
+        },
+        {
+          "TipoPasajero": "Adulto",
+          "ClaseVuelo": "Business",
+          "DisponibilidadVuelo": 5,
+          "Precio": 300000.0
+        },
+        {
+          "TipoPasajero": "Menor",
+          "ClaseVuelo": "Business",
+          "DisponibilidadVuelo": 10,
+          "Precio": 350000.0
+        },
+        {
+          "TipoPasajero": "Infante",
+          "ClaseVuelo": "Business",
+          "DisponibilidadVuelo": 5,
+          "Precio": 270000.0
+        }
+      ]
+    },
+    "Alojamiento": null
+  },
+  {
+    "CodProducto": "271PPJ9J",
+    "Vuelo": {
+      "CodVuelo": "V-3",
+      "Origen": "EZE",
+      "Destino": "BCN",
+      "Aerolinea": "AA",
+      "FechaHoraSalida": "2023-06-02T05:00:00",
+      "FechaHoraArribo": "2023-06-02T06:00:00",
+      "TiempoDeVuelo": "01:00:00",
+      "Tarifa": [
+        {
+          "TipoPasajero": "Adulto",
+          "ClaseVuelo": "Economy",
+          "DisponibilidadVuelo": 10,
+          "Precio": 140000.0
+        },
+        {
+          "TipoPasajero": "Menor",
+          "ClaseVuelo": "Economy",
+          "DisponibilidadVuelo": 10,
+          "Precio": 110000.0
+        },
+        {
+          "TipoPasajero": "Infante",
+          "ClaseVuelo": "Economy",
+          "DisponibilidadVuelo": 5,
+          "Precio": 85000.0
+        },
+        {
+          "TipoPasajero": "Adulto",
+          "ClaseVuelo": "Business",
+          "DisponibilidadVuelo": 5,
+          "Precio": 200000.0
+        },
+        {
+          "TipoPasajero": "Menor",
+          "ClaseVuelo": "Business",
+          "DisponibilidadVuelo": 10,
+          "Precio": 180000.0
+        },
+        {
+          "TipoPasajero": "Infante",
+          "ClaseVuelo": "Economy",
+          "DisponibilidadVuelo": 5,
+          "Precio": 130000.0
+        }
+      ]
+    },
+    "Alojamiento": null
+  },
+  {
+    "CodProducto": "TZH899T5",
+    "Vuelo": {
+      "CodVuelo": "V-4",
+      "Origen": "EZE",
+      "Destino": "HND",
+      "Aerolinea": "TK",
+      "FechaHoraSalida": "2023-06-01T14:00:00",
+      "FechaHoraArribo": "2023-06-03T17:00:00",
+      "TiempoDeVuelo": "03:00:00",
+      "Tarifa": [
+        {
+          "TipoPasajero": "Adulto",
+          "ClaseVuelo": "Economy",
+          "DisponibilidadVuelo": 10,
+          "Precio": 300000.0
+        },
+        {
+          "TipoPasajero": "Menor",
+          "ClaseVuelo": "Economy",
+          "DisponibilidadVuelo": 10,
+          "Precio": 250000.0
+        },
+        {
+          "TipoPasajero": "Infante",
+          "ClaseVuelo": "Economy",
+          "DisponibilidadVuelo": 5,
+          "Precio": 230000.0
+        },
+        {
+          "TipoPasajero": "Adulto",
+          "ClaseVuelo": "Business",
+          "DisponibilidadVuelo": 5,
+          "Precio": 350000.0
+        },
+        {
+          "TipoPasajero": "Menor",
+          "ClaseVuelo": "Business",
+          "DisponibilidadVuelo": 5,
+          "Precio": 300000.0
+        },
+        {
+          "TipoPasajero": "Infante",
+          "ClaseVuelo": "Economy",
+          "DisponibilidadVuelo": 5,
+          "Precio": 280000.0
+        }
+      ]
+    },
+    "Alojamiento": null
+  },
+  {
+    "CodProducto": "DSZCC8OM",
+    "Vuelo": {
+      "CodVuelo": "V-5",
+      "Origen": "EZE",
+      "Destino": "SYD",
+      "Aerolinea": "TK",
+      "FechaHoraSalida": "2023-06-01T03:00:00",
+      "FechaHoraArribo": "2023-06-04T08:00:00",
+      "TiempoDeVuelo": "05:00:00",
+      "Tarifa": [
+        {
+          "TipoPasajero": "Adulto",
+          "ClaseVuelo": "Economy",
+          "DisponibilidadVuelo": 10,
+          "Precio": 295000.0
+        },
+        {
+          "TipoPasajero": "Menor",
+          "ClaseVuelo": "Economy",
+          "DisponibilidadVuelo": 10,
+          "Precio": 275000.0
+        },
+        {
+          "TipoPasajero": "Infante",
+          "ClaseVuelo": "Economy",
+          "DisponibilidadVuelo": 5,
+          "Precio": 255000.0
+        },
+        {
+          "TipoPasajero": "Adulto",
+          "ClaseVuelo": "Business",
+          "DisponibilidadVuelo": 5,
+          "Precio": 380000.0
+        },
+        {
+          "TipoPasajero": "Menor",
+          "ClaseVuelo": "Business",
+          "DisponibilidadVuelo": 5,
+          "Precio": 345000.0
+        },
+        {
+          "TipoPasajero": "Infante",
+          "ClaseVuelo": "Economy",
+          "DisponibilidadVuelo": 5,
+          "Precio": 300000.0
+        }
+      ]
+    },
+    "Alojamiento": null
+  },
+  {
+    "CodProducto": "AS2YC08D",
+    "Vuelo": {
+      "CodVuelo": "V-6",
+      "Origen": "EZE",
+      "Destino": "MIA",
+      "Aerolinea": "AA",
+      "FechaHoraSalida": "2023-06-01T05:00:00",
+      "FechaHoraArribo": "2023-06-04T09:00:00",
+      "TiempoDeVuelo": "04:00:00",
+      "Tarifa": [
+        {
+          "TipoPasajero": "Adulto",
+          "ClaseVuelo": "Economy",
+          "DisponibilidadVuelo": 10,
+          "Precio": 130000.0
+        },
+        {
+          "TipoPasajero": "Menor",
+          "ClaseVuelo": "Economy",
+          "DisponibilidadVuelo": 10,
+          "Precio": 100000.0
+        },
+        {
+          "TipoPasajero": "Infante",
+          "ClaseVuelo": "Economy",
+          "DisponibilidadVuelo": 5,
+          "Precio": 85000.0
+        },
+        {
+          "TipoPasajero": "Adulto",
+          "ClaseVuelo": "Business",
+          "DisponibilidadVuelo": 5,
+          "Precio": 190000.0
+        },
+        {
+          "TipoPasajero": "Menor",
+          "ClaseVuelo": "Business",
+          "DisponibilidadVuelo": 5,
+          "Precio": 150000.0
+        },
+        {
+          "TipoPasajero": "Infante",
+          "ClaseVuelo": "Economy",
+          "DisponibilidadVuelo": 5,
+          "Precio": 105000.0
+        }
+      ]
+    },
+    "Alojamiento": null
+  },
+  {
+    "CodProducto": "A69GNBND",
+    "Vuelo": {
+      "CodVuelo": "V-7",
+      "Origen": "LHR",
+      "Destino": "EZE",
+      "Aerolinea": "AA",
+      "FechaHoraSalida": "2023-06-01T03:00:00",
+      "FechaHoraArribo": "2023-07-01T08:00:00",
+      "TiempoDeVuelo": "05:00:00",
+      "Tarifa": [
+        {
+          "TipoPasajero": "Adulto",
+          "ClaseVuelo": "Economy",
+          "DisponibilidadVuelo": 10,
+          "Precio": 170000.0
+        },
+        {
+          "TipoPasajero": "Menor",
+          "ClaseVuelo": "Economy",
+          "DisponibilidadVuelo": 10,
+          "Precio": 140000.0
+        },
+        {
+          "TipoPasajero": "Infante",
+          "ClaseVuelo": "Economy",
+          "DisponibilidadVuelo": 5,
+          "Precio": 110000.0
+        },
+        {
+          "TipoPasajero": "Adulto",
+          "ClaseVuelo": "Business",
+          "DisponibilidadVuelo": 5,
+          "Precio": 210000.0
+        },
+        {
+          "TipoPasajero": "Menor",
+          "ClaseVuelo": "Business",
+          "DisponibilidadVuelo": 5,
+          "Precio": 175000.0
+        },
+        {
+          "TipoPasajero": "Infante",
+          "ClaseVuelo": "Economy",
+          "DisponibilidadVuelo": 5,
+          "Precio": 140000.0
+        }
+      ]
+    },
+    "Alojamiento": null
+  },
+  {
+    "CodProducto": "POXPW25R",
+    "Vuelo": {
+      "CodVuelo": "V-8",
+      "Origen": "MAD",
+      "Destino": "EZE",
+      "Aerolinea": "AA",
+      "FechaHoraSalida": "2023-06-01T10:00:00",
+      "FechaHoraArribo": "2023-07-01T16:00:00",
+      "TiempoDeVuelo": "06:00:00",
+      "Tarifa": [
+        {
+          "TipoPasajero": "Adulto",
+          "ClaseVuelo": "Economy",
+          "DisponibilidadVuelo": 10,
+          "Precio": 200000.0
+        },
+        {
+          "TipoPasajero": "Menor",
+          "ClaseVuelo": "Economy",
+          "DisponibilidadVuelo": 10,
+          "Precio": 165000.0
+        },
+        {
+          "TipoPasajero": "Infante",
+          "ClaseVuelo": "Economy",
+          "DisponibilidadVuelo": 5,
+          "Precio": 135000.0
+        },
+        {
+          "TipoPasajero": "Adulto",
+          "ClaseVuelo": "Business",
+          "DisponibilidadVuelo": 5,
+          "Precio": 250000.0
+        },
+        {
+          "TipoPasajero": "Menor",
+          "ClaseVuelo": "Business",
+          "DisponibilidadVuelo": 5,
+          "Precio": 210000.0
+        },
+        {
+          "TipoPasajero": "Infante",
+          "ClaseVuelo": "Economy",
+          "DisponibilidadVuelo": 5,
+          "Precio": 185000.0
+        }
+      ]
+    },
+    "Alojamiento": null
+  },
+  {
+    "CodProducto": "ZSV7X5J2",
+    "Vuelo": {
+      "CodVuelo": "V-9",
+      "Origen": "BCN",
+      "Destino": "EZE",
+      "Aerolinea": "AA",
+      "FechaHoraSalida": "2023-06-01T05:00:00",
+      "FechaHoraArribo": "2023-07-02T10:00:00",
+      "TiempoDeVuelo": "05:00:00",
+      "Tarifa": [
+        {
+          "TipoPasajero": "Adulto",
+          "ClaseVuelo": "Economy",
+          "DisponibilidadVuelo": 10,
+          "Precio": 195000.0
+        },
+        {
+          "TipoPasajero": "Menor",
+          "ClaseVuelo": "Economy",
+          "DisponibilidadVuelo": 10,
+          "Precio": 175000.0
+        },
+        {
+          "TipoPasajero": "Infante",
+          "ClaseVuelo": "Economy",
+          "DisponibilidadVuelo": 5,
+          "Precio": 135000.0
+        },
+        {
+          "TipoPasajero": "Adulto",
+          "ClaseVuelo": "Business",
+          "DisponibilidadVuelo": 5,
+          "Precio": 275000.0
+        },
+        {
+          "TipoPasajero": "Menor",
+          "ClaseVuelo": "Business",
+          "DisponibilidadVuelo": 5,
+          "Precio": 245000.0
+        },
+        {
+          "TipoPasajero": "Infante",
+          "ClaseVuelo": "Economy",
+          "DisponibilidadVuelo": 5,
+          "Precio": 215000.0
+        }
+      ]
+    },
+    "Alojamiento": null
+  },
+  {
+    "CodProducto": "VDFR0UPQ",
+    "Vuelo": {
+      "CodVuelo": "V-10",
+      "Origen": "HND",
+      "Destino": "EZE",
+      "Aerolinea": "TK",
+      "FechaHoraSalida": "2023-06-01T07:00:00",
+      "FechaHoraArribo": "2023-07-03T15:00:00",
+      "TiempoDeVuelo": "08:00:00",
+      "Tarifa": [
+        {
+          "TipoPasajero": "Adulto",
+          "ClaseVuelo": "Economy",
+          "DisponibilidadVuelo": 10,
+          "Precio": 280000.0
+        },
+        {
+          "TipoPasajero": "Menor",
+          "ClaseVuelo": "Economy",
+          "DisponibilidadVuelo": 10,
+          "Precio": 240000.0
+        },
+        {
+          "TipoPasajero": "Infante",
+          "ClaseVuelo": "Economy",
+          "DisponibilidadVuelo": 5,
+          "Precio": 210000.0
+        },
+        {
+          "TipoPasajero": "Adulto",
+          "ClaseVuelo": "Business",
+          "DisponibilidadVuelo": 5,
+          "Precio": 370000.0
+        },
+        {
+          "TipoPasajero": "Menor",
+          "ClaseVuelo": "Business",
+          "DisponibilidadVuelo": 5,
+          "Precio": 340000.0
+        },
+        {
+          "TipoPasajero": "Infante",
+          "ClaseVuelo": "Economy",
+          "DisponibilidadVuelo": 5,
+          "Precio": 310000.0
+        }
+      ]
+    },
+    "Alojamiento": null
+  },
+  {
+    "CodProducto": "O9CT0QA7",
+    "Vuelo": {
+      "CodVuelo": "V-11",
+      "Origen": "SYD",
+      "Destino": "EZE",
+      "Aerolinea": "TK",
+      "FechaHoraSalida": "2023-06-01T01:00:00",
+      "FechaHoraArribo": "2023-07-04T06:00:00",
+      "TiempoDeVuelo": "05:00:00",
+      "Tarifa": [
+        {
+          "TipoPasajero": "Adulto",
+          "ClaseVuelo": "Economy",
+          "DisponibilidadVuelo": 10,
+          "Precio": 260000.0
+        },
+        {
+          "TipoPasajero": "Menor",
+          "ClaseVuelo": "Economy",
+          "DisponibilidadVuelo": 10,
+          "Precio": 230000.0
+        },
+        {
+          "TipoPasajero": "Infante",
+          "ClaseVuelo": "Economy",
+          "DisponibilidadVuelo": 5,
+          "Precio": 200000.0
+        },
+        {
+          "TipoPasajero": "Adulto",
+          "ClaseVuelo": "Business",
+          "DisponibilidadVuelo": 5,
+          "Precio": 310000.0
+        },
+        {
+          "TipoPasajero": "Menor",
+          "ClaseVuelo": "Business",
+          "DisponibilidadVuelo": 5,
+          "Precio": 280000.0
+        },
+        {
+          "TipoPasajero": "Infante",
+          "ClaseVuelo": "Economy",
+          "DisponibilidadVuelo": 5,
+          "Precio": 240000.0
+        }
+      ]
+    },
+    "Alojamiento": null
+  },
+  {
+    "CodProducto": "ORAPVEFA",
+    "Vuelo": {
+      "CodVuelo": "V-12",
+      "Origen": "MIA",
+      "Destino": "EZE",
+      "Aerolinea": "AA",
+      "FechaHoraSalida": "2023-06-01T15:00:00",
+      "FechaHoraArribo": "2023-07-05T20:00:00",
+      "TiempoDeVuelo": "05:00:00",
+      "Tarifa": [
+        {
+          "TipoPasajero": "Adulto",
+          "ClaseVuelo": "Economy",
+          "DisponibilidadVuelo": 10,
+          "Precio": 150000.0
+        },
+        {
+          "TipoPasajero": "Menor",
+          "ClaseVuelo": "Economy",
+          "DisponibilidadVuelo": 10,
+          "Precio": 120000.0
+        },
+        {
+          "TipoPasajero": "Infante",
+          "ClaseVuelo": "Economy",
+          "DisponibilidadVuelo": 5,
+          "Precio": 90000.0
+        },
+        {
+          "TipoPasajero": "Adulto",
+          "ClaseVuelo": "Business",
+          "DisponibilidadVuelo": 5,
+          "Precio": 200000.0
+        },
+        {
+          "TipoPasajero": "Menor",
+          "ClaseVuelo": "Business",
+          "DisponibilidadVuelo": 5,
+          "Precio": 170000.0
+        },
+        {
+          "TipoPasajero": "Infante",
+          "ClaseVuelo": "Economy",
+          "DisponibilidadVuelo": 5,
+          "Precio": 130000.0
+        }
+      ]
+    },
+    "Alojamiento": null
+  },
+  {
+    "CodProducto": "08Q0W5GG",
+    "Vuelo": null,
+    "Alojamiento": {
+      "CodHotel": "H-1",
+      "NombreAlojamiento": "Hotel Este",
+      "CodCiudad": "BSA",
+      "Direccion": "Av. Libertador, 111, 1458, 58987, 49741",
+      "Calificacion": 3,
+      "HabitacionAlojamiento": [
+        {
+          "NombreHabitacion": "Doble Normal",
+          "Tarifa": 9000.0,
+          "CapacidadAdultos": 2,
+          "CapacidadMenores": 0,
+          "CapacidadInfantes": 0,
+          "DisponibilidadHabitacion": [
+            {
+              "Fecha": "2023-06-01T00:00:00",
+              "CantidadDisponible": 9
+            },
+            {
+              "Fecha": "2023-06-02T00:00:00",
+              "CantidadDisponible": 9
+            },
+            {
+              "Fecha": "2023-06-03T00:00:00",
+              "CantidadDisponible": 10
+            },
+            {
+              "Fecha": "2023-06-04T00:00:00",
+              "CantidadDisponible": 10
+            }
+          ]
+        },
+        {
+          "NombreHabitacion": "Doble Suite",
+          "Tarifa": 15000.0,
+          "CapacidadAdultos": 2,
+          "CapacidadMenores": 0,
+          "CapacidadInfantes": 0,
+          "DisponibilidadHabitacion": [
+            {
+              "Fecha": "2023-06-01T00:00:00",
+              "CantidadDisponible": 3
+            },
+            {
+              "Fecha": "2023-06-02T00:00:00",
+              "CantidadDisponible": 4
+            },
+            {
+              "Fecha": "2023-06-03T00:00:00",
+              "CantidadDisponible": 5
+            },
+            {
+              "Fecha": "2023-06-04T00:00:00",
+              "CantidadDisponible": 5
+            }
+          ]
+        },
+        {
+          "NombreHabitacion": "Familiar",
+          "Tarifa": 12000.0,
+          "CapacidadAdultos": 2,
+          "CapacidadMenores": 2,
+          "CapacidadInfantes": 1,
+          "DisponibilidadHabitacion": [
+            {
+              "Fecha": "2023-06-01T00:00:00",
+              "CantidadDisponible": 10
+            },
+            {
+              "Fecha": "2023-06-02T00:00:00",
+              "CantidadDisponible": 8
+            },
+            {
+              "Fecha": "2023-06-03T00:00:00",
+              "CantidadDisponible": 8
+            },
+            {
+              "Fecha": "2023-06-04T00:00:00",
+              "CantidadDisponible": 9
+            }
+          ]
+        },
+        {
+          "NombreHabitacion": "Familiar Suite",
+          "Tarifa": 24000.0,
+          "CapacidadAdultos": 2,
+          "CapacidadMenores": 2,
+          "CapacidadInfantes": 1,
+          "DisponibilidadHabitacion": [
+            {
+              "Fecha": "2023-06-01T00:00:00",
+              "CantidadDisponible": 5
+            },
+            {
+              "Fecha": "2023-06-02T00:00:00",
+              "CantidadDisponible": 4
+            },
+            {
+              "Fecha": "2023-06-03T00:00:00",
+              "CantidadDisponible": 3
+            },
+            {
+              "Fecha": "2023-06-04T00:00:00",
+              "CantidadDisponible": 4
+            }
+          ]
+        }
+      ]
+    }
+  },
+  {
+    "CodProducto": "WFP0HLOP",
+    "Vuelo": null,
+    "Alojamiento": {
+      "CodHotel": "H-2",
+      "NombreAlojamiento": "Hotel Sur",
+      "CodCiudad": "BRC",
+      "Direccion": "Av. Exequiel Bustillo, 2598, 15879, 65874",
+      "Calificacion": 4,
+      "HabitacionAlojamiento": [
+        {
+          "NombreHabitacion": "Simple",
+          "Tarifa": 7000.0,
+          "CapacidadAdultos": 1,
+          "CapacidadMenores": 0,
+          "CapacidadInfantes": 0,
+          "DisponibilidadHabitacion": [
+            {
+              "Fecha": "2023-06-01T00:00:00",
+              "CantidadDisponible": 8
+            },
+            {
+              "Fecha": "2023-06-02T00:00:00",
+              "CantidadDisponible": 6
+            },
+            {
+              "Fecha": "2023-06-03T00:00:00",
+              "CantidadDisponible": 6
+            },
+            {
+              "Fecha": "2023-06-04T00:00:00",
+              "CantidadDisponible": 5
+            }
+          ]
+        },
+        {
+          "NombreHabitacion": "Simple Suite",
+          "Tarifa": 11000.0,
+          "CapacidadAdultos": 1,
+          "CapacidadMenores": 0,
+          "CapacidadInfantes": 0,
+          "DisponibilidadHabitacion": [
+            {
+              "Fecha": "2023-06-01T00:00:00",
+              "CantidadDisponible": 4
+            },
+            {
+              "Fecha": "2023-06-02T00:00:00",
+              "CantidadDisponible": 3
+            },
+            {
+              "Fecha": "2023-06-03T00:00:00",
+              "CantidadDisponible": 4
+            },
+            {
+              "Fecha": "2023-06-04T00:00:00",
+              "CantidadDisponible": 4
+            }
+          ]
+        },
+        {
+          "NombreHabitacion": "Clásica",
+          "Tarifa": 10000.0,
+          "CapacidadAdultos": 2,
+          "CapacidadMenores": 0,
+          "CapacidadInfantes": 0,
+          "DisponibilidadHabitacion": [
+            {
+              "Fecha": "2023-06-01T00:00:00",
+              "CantidadDisponible": 8
+            },
+            {
+              "Fecha": "2023-06-02T00:00:00",
+              "CantidadDisponible": 5
+            },
+            {
+              "Fecha": "2023-06-03T00:00:00",
+              "CantidadDisponible": 5
+            },
+            {
+              "Fecha": "2023-06-04T00:00:00",
+              "CantidadDisponible": 5
+            }
+          ]
+        },
+        {
+          "NombreHabitacion": "Premier",
+          "Tarifa": 15000.0,
+          "CapacidadAdultos": 2,
+          "CapacidadMenores": 0,
+          "CapacidadInfantes": 0,
+          "DisponibilidadHabitacion": [
+            {
+              "Fecha": "2023-06-01T00:00:00",
+              "CantidadDisponible": 4
+            },
+            {
+              "Fecha": "2023-06-02T00:00:00",
+              "CantidadDisponible": 1
+            },
+            {
+              "Fecha": "2023-06-03T00:00:00",
+              "CantidadDisponible": 1
+            },
+            {
+              "Fecha": "2023-06-04T00:00:00",
+              "CantidadDisponible": 1
+            }
+          ]
+        },
+        {
+          "NombreHabitacion": "Clásica - Familiar",
+          "Tarifa": 14000.0,
+          "CapacidadAdultos": 2,
+          "CapacidadMenores": 2,
+          "CapacidadInfantes": 1,
+          "DisponibilidadHabitacion": [
+            {
+              "Fecha": "2023-06-01T00:00:00",
+              "CantidadDisponible": 5
+            },
+            {
+              "Fecha": "2023-06-02T00:00:00",
+              "CantidadDisponible": 3
+            },
+            {
+              "Fecha": "2023-06-03T00:00:00",
+              "CantidadDisponible": 5
+            },
+            {
+              "Fecha": "2023-06-04T00:00:00",
+              "CantidadDisponible": 5
+            }
+          ]
+        }
+      ]
+    }
+  },
+  {
+    "CodProducto": "5Q3CWB3Q",
+    "Vuelo": null,
+    "Alojamiento": {
+      "CodHotel": "H-3",
+      "NombreAlojamiento": "Hotel Norte",
+      "CodCiudad": "SLT",
+      "Direccion": "Av. Entre Ríos, 9845, 98784, 54879",
+      "Calificacion": 3,
+      "HabitacionAlojamiento": [
+        {
+          "NombreHabitacion": "Doble Superior",
+          "Tarifa": 16000.0,
+          "CapacidadAdultos": 2,
+          "CapacidadMenores": 2,
+          "CapacidadInfantes": 2,
+          "DisponibilidadHabitacion": [
+            {
+              "Fecha": "2023-06-01T00:00:00",
+              "CantidadDisponible": 5
+            },
+            {
+              "Fecha": "2023-06-02T00:00:00",
+              "CantidadDisponible": 2
+            },
+            {
+              "Fecha": "2023-06-03T00:00:00",
+              "CantidadDisponible": 2
+            },
+            {
+              "Fecha": "2023-06-04T00:00:00",
+              "CantidadDisponible": 2
+            }
+          ]
+        },
+        {
+          "NombreHabitacion": "Superior",
+          "Tarifa": 13000.0,
+          "CapacidadAdultos": 2,
+          "CapacidadMenores": 0,
+          "CapacidadInfantes": 0,
+          "DisponibilidadHabitacion": [
+            {
+              "Fecha": "2023-06-01T00:00:00",
+              "CantidadDisponible": 5
+            },
+            {
+              "Fecha": "2023-06-02T00:00:00",
+              "CantidadDisponible": 4
+            },
+            {
+              "Fecha": "2023-06-03T00:00:00",
+              "CantidadDisponible": 4
+            },
+            {
+              "Fecha": "2023-06-04T00:00:00",
+              "CantidadDisponible": 4
+            }
+          ]
+        },
+        {
+          "NombreHabitacion": "Suite Prestige",
+          "Tarifa": 20000.0,
+          "CapacidadAdultos": 2,
+          "CapacidadMenores": 0,
+          "CapacidadInfantes": 0,
+          "DisponibilidadHabitacion": [
+            {
+              "Fecha": "2023-06-01T00:00:00",
+              "CantidadDisponible": 3
+            },
+            {
+              "Fecha": "2023-06-02T00:00:00",
+              "CantidadDisponible": 2
+            },
+            {
+              "Fecha": "2023-06-03T00:00:00",
+              "CantidadDisponible": 2
+            },
+            {
+              "Fecha": "2023-06-04T00:00:00",
+              "CantidadDisponible": 3
+            }
+          ]
+        }
+      ]
+    }
+  },
+  {
+    "CodProducto": "UWDFXNGK",
+    "Vuelo": null,
+    "Alojamiento": {
+      "CodHotel": "H-4",
+      "NombreAlojamiento": "Hotel Oeste",
+      "CodCiudad": "MDZ",
+      "Direccion": "Av. San Martín, 1589, 75418, 54387",
+      "Calificacion": 5,
+      "HabitacionAlojamiento": [
+        {
+          "NombreHabitacion": "Indiviudal Clásica",
+          "Tarifa": 9000.0,
+          "CapacidadAdultos": 1,
+          "CapacidadMenores": 0,
+          "CapacidadInfantes": 0,
+          "DisponibilidadHabitacion": [
+            {
+              "Fecha": "2023-06-01T00:00:00",
+              "CantidadDisponible": 5
+            },
+            {
+              "Fecha": "2023-06-02T00:00:00",
+              "CantidadDisponible": 2
+            },
+            {
+              "Fecha": "2023-06-03T00:00:00",
+              "CantidadDisponible": 2
+            },
+            {
+              "Fecha": "2023-06-04T00:00:00",
+              "CantidadDisponible": 2
+            }
+          ]
+        },
+        {
+          "NombreHabitacion": "Doble Clásica",
+          "Tarifa": 13000.0,
+          "CapacidadAdultos": 2,
+          "CapacidadMenores": 0,
+          "CapacidadInfantes": 0,
+          "DisponibilidadHabitacion": [
+            {
+              "Fecha": "2023-06-01T00:00:00",
+              "CantidadDisponible": 5
+            },
+            {
+              "Fecha": "2023-06-02T00:00:00",
+              "CantidadDisponible": 3
+            },
+            {
+              "Fecha": "2023-06-03T00:00:00",
+              "CantidadDisponible": 3
+            },
+            {
+              "Fecha": "2023-06-04T00:00:00",
+              "CantidadDisponible": 4
+            }
+          ]
+        },
+        {
+          "NombreHabitacion": "Familiar Clásica",
+          "Tarifa": 15000.0,
+          "CapacidadAdultos": 2,
+          "CapacidadMenores": 2,
+          "CapacidadInfantes": 1,
+          "DisponibilidadHabitacion": [
+            {
+              "Fecha": "2023-06-01T00:00:00",
+              "CantidadDisponible": 5
+            },
+            {
+              "Fecha": "2023-06-02T00:00:00",
+              "CantidadDisponible": 2
+            },
+            {
+              "Fecha": "2023-06-03T00:00:00",
+              "CantidadDisponible": 2
+            },
+            {
+              "Fecha": "2023-06-04T00:00:00",
+              "CantidadDisponible": 2
+            }
+          ]
+        },
+        {
+          "NombreHabitacion": "Doble Suite",
+          "Tarifa": 17000.0,
+          "CapacidadAdultos": 2,
+          "CapacidadMenores": 0,
+          "CapacidadInfantes": 0,
+          "DisponibilidadHabitacion": [
+            {
+              "Fecha": "2023-06-01T00:00:00",
+              "CantidadDisponible": 3
+            },
+            {
+              "Fecha": "2023-06-02T00:00:00",
+              "CantidadDisponible": 2
+            },
+            {
+              "Fecha": "2023-06-03T00:00:00",
+              "CantidadDisponible": 2
+            },
+            {
+              "Fecha": "2023-06-04T00:00:00",
+              "CantidadDisponible": 2
+            }
+          ]
+        }
+      ]
+    }
+  }
+]

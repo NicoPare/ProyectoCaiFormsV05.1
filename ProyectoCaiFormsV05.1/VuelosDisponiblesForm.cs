@@ -10,8 +10,11 @@ using System.Windows.Forms;
 
 namespace ProyectoCaiFormsV05._1
 {
+    
     public partial class VuelosDisponiblesForm : Form
     {
+        
+
         public VuelosDisponiblesForm(List<dynamic> vuelosDisponibles)
         {
             InitializeComponent();
@@ -43,6 +46,9 @@ namespace ProyectoCaiFormsV05._1
                     );
                 }
             }
+
         }
+        
     }
+
 }

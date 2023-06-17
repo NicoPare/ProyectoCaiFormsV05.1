@@ -4,8 +4,8 @@
     "Origen": "EZE",
     "Destino": "LHR",
     "Aerolinea": "AA",
-    "FechaHoraSalida": "2023-06-01 05:00:00",
-    "FechaHoraArribo": "2023-06-01 06:00:00",
+    "FechaHoraSalida": "2023-07-01 05:00:00",
+    "FechaHoraArribo": "2023-07-01 06:00:00",
     "TiempoDeVuelo": "01:00:00",
     "Tarifa": [
       {
@@ -51,8 +51,8 @@
     "Origen": "EZE",
     "Destino": "MAD",
     "Aerolinea": "AA",
-    "FechaHoraSalida": "2023-06-01 08:00:00",
-    "FechaHoraArribo": "2023-06-01 11:00:00",
+    "FechaHoraSalida": "2023-07-01 08:00:00",
+    "FechaHoraArribo": "2023-07-01 11:00:00",
     "TiempoDeVuelo": "03:00:00",
     "Tarifa": [
       {
@@ -98,8 +98,8 @@
     "Origen": "EZE",
     "Destino": "BCN",
     "Aerolinea": "AA",
-    "FechaHoraSalida": "2023-06-02 05:00:00",
-    "FechaHoraArribo": "2023-06-02 06:00:00",
+    "FechaHoraSalida": "2023-07-02 05:00:00",
+    "FechaHoraArribo": "2023-07-02 06:00:00",
     "TiempoDeVuelo": "01:00:00",
     "Tarifa": [
       {
@@ -145,8 +145,8 @@
     "Origen": "EZE",
     "Destino": "HND",
     "Aerolinea": "TK",
-    "FechaHoraSalida": "2023-06-01 14:00:00",
-    "FechaHoraArribo": "2023-06-03 17:00:00",
+    "FechaHoraSalida": "2023-07-01 14:00:00",
+    "FechaHoraArribo": "2023-07-03 17:00:00",
     "TiempoDeVuelo": "03:00:00",
     "Tarifa": [
       {
@@ -192,8 +192,8 @@
     "Origen": "EZE",
     "Destino": "SYD",
     "Aerolinea": "TK",
-    "FechaHoraSalida": "2023-06-01 03:00:00",
-    "FechaHoraArribo": "2023-06-04 08:00:00",
+    "FechaHoraSalida": "2023-07-01 03:00:00",
+    "FechaHoraArribo": "2023-07-04 08:00:00",
     "TiempoDeVuelo": "05:00:00",
     "Tarifa": [
       {
@@ -239,8 +239,8 @@
     "Origen": "EZE",
     "Destino": "MIA",
     "Aerolinea": "AA",
-    "FechaHoraSalida": "2023-06-01 05:00:00",
-    "FechaHoraArribo": "2023-06-04 09:00:00",
+    "FechaHoraSalida": "2023-07-01 05:00:00",
+    "FechaHoraArribo": "2023-07-04 09:00:00",
     "TiempoDeVuelo": "04:00:00",
     "Tarifa": [
       {
@@ -286,7 +286,7 @@
     "Origen": "LHR",
     "Destino": "EZE",
     "Aerolinea": "AA",
-    "FechaHoraSalida": "2023-06-01 03:00:00",
+    "FechaHoraSalida": "2023-07-01 03:00:00",
     "FechaHoraArribo": "2023-07-01 08:00:00",
     "TiempoDeVuelo": "05:00:00",
     "Tarifa": [
@@ -333,7 +333,7 @@
     "Origen": "MAD",
     "Destino": "EZE",
     "Aerolinea": "AA",
-    "FechaHoraSalida": "2023-06-01 10:00:00",
+    "FechaHoraSalida": "2023-07-01 10:00:00",
     "FechaHoraArribo": "2023-07-01 16:00:00",
     "TiempoDeVuelo": "06:00:00",
     "Tarifa": [
@@ -380,7 +380,7 @@
     "Origen": "BCN",
     "Destino": "EZE",
     "Aerolinea": "AA",
-    "FechaHoraSalida": "2023-06-01 05:00:00",
+    "FechaHoraSalida": "2023-07-01 05:00:00",
     "FechaHoraArribo": "2023-07-02 10:00:00",
     "TiempoDeVuelo": "05:00:00",
     "Tarifa": [
@@ -427,7 +427,7 @@
     "Origen": "HND",
     "Destino": "EZE",
     "Aerolinea": "TK",
-    "FechaHoraSalida": "2023-06-01 07:00:00",
+    "FechaHoraSalida": "2023-07-01 07:00:00",
     "FechaHoraArribo": "2023-07-03 15:00:00",
     "TiempoDeVuelo": "08:00:00",
     "Tarifa": [
@@ -474,7 +474,7 @@
     "Origen": "SYD",
     "Destino": "EZE",
     "Aerolinea": "TK",
-    "FechaHoraSalida": "2023-06-01 01:00:00",
+    "FechaHoraSalida": "2023-07-01 01:00:00",
     "FechaHoraArribo": "2023-07-04 06:00:00",
     "TiempoDeVuelo": "05:00:00",
     "Tarifa": [
@@ -521,7 +521,7 @@
     "Origen": "MIA",
     "Destino": "EZE",
     "Aerolinea": "AA",
-    "FechaHoraSalida": "2023-06-01 15:00:00",
+    "FechaHoraSalida": "2023-07-01 15:00:00",
     "FechaHoraArribo": "2023-07-05 20:00:00",
     "TiempoDeVuelo": "05:00:00",
     "Tarifa": [

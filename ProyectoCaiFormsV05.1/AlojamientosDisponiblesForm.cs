@@ -10,8 +10,11 @@ using System.Windows.Forms;
 
 namespace ProyectoCaiFormsV05._1
 {
+    
     public partial class AlojamientosDisponiblesForm : Form
     {
+        
+        
         private List<dynamic> alojamientos;
 
         public AlojamientosDisponiblesForm(List<dynamic> alojamientos)
@@ -22,6 +25,14 @@ namespace ProyectoCaiFormsV05._1
 
         private void AlojamientosDisponiblesForm_Load(object sender, EventArgs e)
         {
+            dgvAlojamientos.Columns.Add("colCodCiudad", "CodCiudad");
+            dgvAlojamientos.Columns.Add("colFechaIngreso", "Fecha Ingreso");
+            dgvAlojamientos.Columns.Add("colFechaEgreso", "Fecha Egreso");
+            dgvAlojamientos.Columns.Add("colNombreAlojamiento", "Nombre Alojamiento");
+            dgvAlojamientos.Columns.Add("colTarifa", "Tarifa habitación por noche");
+            dgvAlojamientos.Columns.Add("colHabitacion", "Habitación");
+            dgvAlojamientos.Columns.Add("colCalificacion", "Calificacion");
+
             foreach (var alojamiento in alojamientos)
             {
                 string codCiudad = alojamiento.CodCiudad;
@@ -32,16 +43,15 @@ namespace ProyectoCaiFormsV05._1
                 string habitacion = alojamiento.NombreHabitacion;
                 int calificacion = alojamiento.Calificacion;
 
-                ListViewItem item = new ListViewItem(codCiudad);
-                item.SubItems.Add(fechaIngreso.ToString("yyyy-MM-dd"));
-                item.SubItems.Add(fechaEgreso.ToString("yyyy-MM-dd"));
-                item.SubItems.Add(nombreAlojamiento);
-                item.SubItems.Add(tarifa.ToString("C"));
-                item.SubItems.Add(habitacion);
-                item.SubItems.Add(calificacion.ToString());
-
-                lstAlojamientos.Items.Add(item);
+                dgvAlojamientos.Rows.Add(codCiudad, fechaIngreso.ToString("yyyy-MM-dd"), fechaEgreso.ToString("yyyy-MM-dd"),
+                    nombreAlojamiento, tarifa.ToString("C"), habitacion, calificacion.ToString());
             }
         }
+        
+
+
     }
+    
+
+
 }

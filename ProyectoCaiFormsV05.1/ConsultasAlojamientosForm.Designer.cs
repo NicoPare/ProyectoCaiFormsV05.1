@@ -141,7 +141,7 @@
 
             this.AutoScaleDimensions = new System.Drawing.SizeF(6F, 13F);
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
-            this.ClientSize = new System.Drawing.Size(304, 205);
+            this.ClientSize = new System.Drawing.Size(/*304*/ 500, 450 /*205*/);
             this.Controls.Add(this.btnBuscar);
             this.Controls.Add(this.numCalificacion);
             this.Controls.Add(this.lblCalificacion);

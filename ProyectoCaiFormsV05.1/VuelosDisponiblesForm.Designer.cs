@@ -1,5 +1,6 @@
 ﻿namespace ProyectoCaiFormsV05._1
 {
+
     partial class VuelosDisponiblesForm
     {
         private System.ComponentModel.IContainer components = null;
@@ -27,7 +28,7 @@
             this.dgvVuelosDisponibles.Location = new System.Drawing.Point(12, 12);
             this.dgvVuelosDisponibles.Name = "dgvVuelosDisponibles";
             this.dgvVuelosDisponibles.ReadOnly = true;
-            this.dgvVuelosDisponibles.Size = new System.Drawing.Size(600, 400);
+            this.dgvVuelosDisponibles.Size = new System.Drawing.Size(1200, 400);
             this.dgvVuelosDisponibles.TabIndex = 0;
             // 
             // VuelosDisponiblesForm

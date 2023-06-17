@@ -1,6 +1,4 @@
-﻿using Newtonsoft.Json;
-using ProyectoCaiFormsV05._1.Entidades;
-using System;
+﻿using System;
 using System.Collections.Generic;
 using System.ComponentModel;
 using System.Data;
@@ -14,57 +12,50 @@ namespace ProyectoCaiFormsV05._1
 {
     public partial class PresupuestoForm : Form
     {
-        private List<dynamic> seleccionados;
+        private List<PresupuestoLineaVuelo> presupuestoLineaVuelo;
 
-        public PresupuestoForm(List<dynamic> seleccionados)
+        public PresupuestoForm(List<PresupuestoLineaVuelo> presupuestoLineaVuelo)
         {
             InitializeComponent();
-            this.seleccionados = seleccionados;
+            this.presupuestoLineaVuelo = presupuestoLineaVuelo;
+            PopulateListBox();
         }
 
-        private void PresupuestoForm_Load(object sender, EventArgs e)
+        private void PopulateListBox()
         {
-            dgvPresupuesto.Columns.Add("colCodigo", "Código");
-            dgvPresupuesto.Columns.Add("colTipo", "Tipo");
-            dgvPresupuesto.Columns.Add("colDetalle", "Detalle");
-
-            Random random = new Random();
-
-            foreach (var seleccionado in seleccionados)
+            foreach (var lineaVuelo in presupuestoLineaVuelo)
             {
-                string codigo = random.Next(1000, 9999).ToString();
-                string tipo = seleccionado is Vuelo ? "Vuelo" : "Alojamiento";
-                string detalle = JsonConvert.SerializeObject(seleccionado);
-
-                dgvPresupuesto.Rows.Add(codigo, tipo, detalle);
+                lstPresupuesto.Items.Add(lineaVuelo.ToString());
             }
         }
+    }
 
-        private void btnFinalizarPresupuesto_Click(object sender, EventArgs e)
+    public class PresupuestoLineaVuelo
+    {
+        public string Origen { get; set; }
+        public string Destino { get; set; }
+        public DateTime FechaHoraSalida { get; set; }
+        public DateTime FechaHoraArribo { get; set; }
+        public string Aerolinea { get; set; }
+        public decimal Precio { get; set; }
+        public string ClaseVuelo { get; set; }
+        public string TipoPasajero { get; set; }
+
+        public PresupuestoLineaVuelo(string origen, string destino, DateTime fechaHoraSalida, DateTime fechaHoraArribo, string aerolinea, decimal precio, string claseVuelo, string tipoPasajero)
         {
-            List<dynamic> presupuesto = new List<dynamic>();
+            Origen = origen;
+            Destino = destino;
+            FechaHoraSalida = fechaHoraSalida;
+            FechaHoraArribo = fechaHoraArribo;
+            Aerolinea = aerolinea;
+            Precio = precio;
+            ClaseVuelo = claseVuelo;
+            TipoPasajero = tipoPasajero;
+        }
 
-            foreach (DataGridViewRow row in dgvPresupuesto.Rows)
-            {
-                string tipo = row.Cells["colTipo"].Value.ToString();
-                string detalle = row.Cells["colDetalle"].Value.ToString();
-
-                if (tipo == "Vuelo")
-                {
-                    presupuesto.Add(JsonConvert.DeserializeObject<Vuelo>(detalle));
-                }
-                else if (tipo == "Alojamiento")
-                {
-                    presupuesto.Add(JsonConvert.DeserializeObject<Alojamiento>(detalle));
-                }
-            }
-
-            string presupuestoJson = JsonConvert.SerializeObject(presupuesto, Formatting.Indented);
-
-            File.WriteAllText("Presupuesto.json", presupuestoJson);
-
-            MessageBox.Show("Presupuesto finalizado y guardado en Presupuesto.json.");
-            this.Close();
+        public override string ToString()
+        {
+            return $"Origen: {Origen}, Destino: {Destino}, Fecha de Salida: {FechaHoraSalida}, Fecha de Arribo: {FechaHoraArribo}, Aerolínea: {Aerolinea}, Precio: {Precio}, Clase de Vuelo: {ClaseVuelo}, Tipo de Pasajero: {TipoPasajero}";
         }
     }
 }

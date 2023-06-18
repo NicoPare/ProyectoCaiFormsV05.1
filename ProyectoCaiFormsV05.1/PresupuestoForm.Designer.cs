@@ -1,46 +1,16 @@
 ﻿namespace ProyectoCaiFormsV05._1
 {
-    /*
-    partial class PresupuestoForm
-    {
-        private System.ComponentModel.IContainer components = null;
-        private System.Windows.Forms.ListBox lstPresupuesto;
-
-        private void InitializeComponent()
-        {
-            this.lstPresupuesto = new System.Windows.Forms.ListBox();
-            this.SuspendLayout();
-            // 
-            // lstPresupuesto
-            // 
-            this.lstPresupuesto.FormattingEnabled = true;
-            this.lstPresupuesto.Location = new System.Drawing.Point(12, 12);
-            this.lstPresupuesto.Name = "lstPresupuesto";
-            this.lstPresupuesto.Size = new System.Drawing.Size(400, 238);
-            this.lstPresupuesto.TabIndex = 0;
-            // 
-            // PresupuestoForm
-            // 
-            this.AutoScaleDimensions = new System.Drawing.SizeF(6F, 13F);
-            this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
-            this.ClientSize = new System.Drawing.Size(424, 262);
-            this.Controls.Add(this.lstPresupuesto);
-            this.Name = "PresupuestoForm";
-            this.Text = "Presupuesto";
-            this.ResumeLayout(false);
-        }
-    }
-    */
-
-    //NUEVO CODIGO PRESUPUESTO FORM DESIGNER
     partial class PresupuestoForm
     {
         private System.ComponentModel.IContainer components = null;
         private System.Windows.Forms.DataGridView dataGridView1;
+        private System.Windows.Forms.Button btnConfirmar;
+
 
         private void InitializeComponent()
         {
             this.dataGridView1 = new System.Windows.Forms.DataGridView();
+            this.btnConfirmar = new System.Windows.Forms.Button();
             ((System.ComponentModel.ISupportInitialize)(this.dataGridView1)).BeginInit();
             this.SuspendLayout();
             // 
@@ -52,17 +22,29 @@
             this.dataGridView1.Size = new System.Drawing.Size(760, 438);
             this.dataGridView1.TabIndex = 0;
             // 
+            // btnConfirmar
+            // 
+            this.btnConfirmar.Location = new System.Drawing.Point(12, 456);
+            this.btnConfirmar.Name = "btnConfirmar";
+            this.btnConfirmar.Size = new System.Drawing.Size(120, 30);
+            this.btnConfirmar.Text = "Confirmar presupuesto";
+            this.btnConfirmar.Click += new System.EventHandler(this.btnConfirmar_Click);
+            this.btnConfirmar.TabIndex = 1;
+            this.btnConfirmar.UseVisualStyleBackColor = true;
+            // 
             // PresupuestoForm
             // 
             this.AutoScaleDimensions = new System.Drawing.SizeF(6F, 13F);
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
-            this.ClientSize = new System.Drawing.Size(784, 462);
+            this.ClientSize = new System.Drawing.Size(784, 700);
             this.Controls.Add(this.dataGridView1);
+            this.Controls.Add(this.btnConfirmar);
             this.Name = "PresupuestoForm";
             this.Text = "Presupuesto";
             ((System.ComponentModel.ISupportInitialize)(this.dataGridView1)).EndInit();
             this.ResumeLayout(false);
         }
+
     }
 
 

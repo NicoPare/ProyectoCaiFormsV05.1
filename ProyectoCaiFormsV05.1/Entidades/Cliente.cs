@@ -6,9 +6,9 @@ using System.Threading.Tasks;
 
 namespace ProyectoCaiFormsV05._1.Entidades
 {
-    public class Persona
+    public class Cliente
     {
-        public int CodPersona { get; set; }
+        public int CodCliente { get; set; }
         public string Nombre { get; set; }
         public string Apellido { get; set; }
         public string TipoDocumento { get; set; }

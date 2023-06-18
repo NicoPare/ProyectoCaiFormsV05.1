@@ -9,7 +9,7 @@ namespace ProyectoCaiFormsV05._1.Entidades
     public class Presupuesto
     {
         public string CodPresupuesto { get; set; }
-        public List<dynamic> AlojamientosSeleccionados { get; set; }
-        public List<dynamic> VuelosSeleccionados { get; set; }
+        public List<PresupuestoLineaVuelo> PresupuestoLineaVuelo { get; set; }
+        public List<PresupuestoLineaAlojamiento> PresupuestoLineaAlojamiento { get; set; }
     }
 }

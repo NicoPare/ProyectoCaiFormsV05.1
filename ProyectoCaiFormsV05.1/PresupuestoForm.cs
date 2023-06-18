@@ -1,4 +1,6 @@
-﻿using ProyectoCaiFormsV05._1.Entidades;
+﻿using ProyectoCaiFormsV05._1.Archivos;
+using ProyectoCaiFormsV05._1.Entidades;
+using ProyectoCaiFormsV05._1.Modulos;
 using System;
 using System.Collections.Generic;
 using System.ComponentModel;
@@ -14,6 +16,9 @@ namespace ProyectoCaiFormsV05._1
     public partial class PresupuestoForm : Form
     {
         private List<PresupuestoLineaVuelo> presupuestoLineaVuelo;
+
+        // ADICION
+        private List<Presupuesto> presupuestos;
 
         public PresupuestoForm(List<PresupuestoLineaVuelo> presupuestoLineaVuelo)
         {
@@ -62,8 +67,27 @@ namespace ProyectoCaiFormsV05._1
 
         private void btnConfirmar_Click(object sender, EventArgs e)
         {
+            /*
             PresupuestoClienteForm presupuestoClienteForm = new PresupuestoClienteForm();
+            presupuestoClienteForm.ShowDialog();*/
+
+            //MODIFICACION
+            PresupuestoClienteForm presupuestoClienteForm = new PresupuestoClienteForm();
+            presupuestoClienteForm.FormClosed += PresupuestoClienteForm_FormClosed;
             presupuestoClienteForm.ShowDialog();
+        }
+
+        //ADICION
+        private void PresupuestoClienteForm_FormClosed(object sender, FormClosedEventArgs e)
+        {
+            PresupuestoClienteForm presupuestoClienteForm = (PresupuestoClienteForm)sender;
+
+            if (presupuestoClienteForm.DialogResult == DialogResult.OK)
+            {
+                Cliente nuevoCliente = presupuestoClienteForm.GetCliente();
+                presupuestos = ModuloPresupuestos.CrearPresupuesto(presupuestoLineaVuelo, nuevoCliente);
+                PresupuestosArchivo.GuardarTodos(presupuestos);
+            }
         }
 
     }

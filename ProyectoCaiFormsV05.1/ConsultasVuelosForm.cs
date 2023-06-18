@@ -67,10 +67,10 @@ namespace ProyectoCaiFormsV05._1
                 return;
             }
 
-            // Validar al menos 1 pasajero adulto
-            if (!Validaciones.ValidarCantidadPasajerosAdultos(cantidadAdultos))
+            // Validar la cantidad de pasajeros para vuelos
+            if (!Validaciones.ValidarCantidadPasajerosVuelo(cantidadAdultos, cantidadMenores, cantidadInfantes))
             {
-                MessageBox.Show("Debe agregar al menos 1 pasajero adulto.", "Error de validación", MessageBoxButtons.OK, MessageBoxIcon.Error);
+                MessageBox.Show("La cantidad de pasajeros adultos debe ser igual o mayor a la suma de menores e infantes.", "Error de validación", MessageBoxButtons.OK, MessageBoxIcon.Error);
                 return;
             }
 

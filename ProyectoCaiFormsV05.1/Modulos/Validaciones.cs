@@ -5,6 +5,7 @@ using System.Linq;
 using System.Text;
 using System.Threading.Tasks;
 using ProyectoCaiFormsV05._1.Entidades;
+using System.Text.RegularExpressions;
 
 namespace ProyectoCaiFormsV05._1.Modulos
 {
@@ -125,10 +126,12 @@ namespace ProyectoCaiFormsV05._1.Modulos
         public static bool ValidarPais(string pais)
         {
             // Cargar los datos del archivo Paises.json
-            string paisesJson = File.ReadAllText("Paises.json");
+            //string paisesJson = File.ReadAllText("Paises.json");
+            string paisesJson = File.ReadAllText("C:\\Users\\npare\\source\\repos\\ProyectoCaiFormsV05.1\\ProyectoCaiFormsV05.1\\Datos\\Paises.json");
 
             // Deserializar el archivo JSON a una lista de países
             var paises = JsonConvert.DeserializeObject<string[]>(paisesJson);
+            
 
             // Verificar si el país está en la lista de países
             if (!paises.Any(p => p.Equals(pais, StringComparison.OrdinalIgnoreCase)))
@@ -180,5 +183,67 @@ namespace ProyectoCaiFormsV05._1.Modulos
 
             return true;
         }
+
+        public static bool ValidarCantidadPasajerosVuelo(int cantidadAdultos, int cantidadMenores, int cantidadInfantes)
+        {
+            // Verificar si la cantidad de pasajeros adultos es mayor o igual a la suma de menores e infantes
+            if (cantidadAdultos < cantidadMenores + cantidadInfantes)
+            {
+                Console.WriteLine("Error: La cantidad de pasajeros adultos debe ser igual o mayor a la suma de menores e infantes.");
+                return false;
+            }
+
+            // Verificar si la cantidad de pasajeros adultos es mayor a 0
+            if (cantidadAdultos <= 0)
+            {
+                MessageBox.Show("La cantidad de pasajeros adultos debe ser mayor a 0.", "Error de fechas", MessageBoxButtons.OK, MessageBoxIcon.Error);
+                return false;
+            }
+
+            // Verificar si la cantidad de menores es mayor o igual a 0
+            if (cantidadMenores < 0)
+            {
+                Console.WriteLine("Error: La cantidad de pasajeros menores debe ser mayor o igual a 0.");
+                return false;
+            }
+
+            // Verificar si la cantidad de infantes es mayor o igual a 0
+            if (cantidadInfantes < 0)
+            {
+                Console.WriteLine("Error: La cantidad de pasajeros infantes debe ser mayor o igual a 0.");
+                return false;
+            }
+
+            return true;
+        }
+
+        public static bool ValidarCorreoElectronico(string correoElectronico)
+        {
+            // Expresión regular para validar el formato del correo electrónico
+            string patronCorreoElectronico = @"^[a-zA-Z0-9_.+-]+@[a-zA-Z0-9-]+\.[a-zA-Z0-9-.]+$";
+
+            // Verificar si el correo electrónico cumple con el formato válido
+            if (!Regex.IsMatch(correoElectronico, patronCorreoElectronico))
+            {
+                Console.WriteLine("Error: Correo electrónico ingresado inválido, por favor, vuelva a ingresar.");
+                return false;
+            }
+
+            return true;
+        }
+        public static bool ValidarNumeroCelular(string numeroCelular)
+        {
+            // Verificar si el número de celular contiene solo dígitos numéricos y no tiene espacios en blanco
+            if (!numeroCelular.All(char.IsDigit) || string.IsNullOrWhiteSpace(numeroCelular))
+            {
+                Console.WriteLine("Error: El número de celular debe contener solo dígitos numéricos y no debe tener espacios en blanco.");
+                return false;
+            }
+
+            return true;
+        }
+
+
+
     }
 }

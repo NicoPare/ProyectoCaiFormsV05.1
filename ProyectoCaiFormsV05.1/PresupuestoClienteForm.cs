@@ -93,8 +93,6 @@ namespace ProyectoCaiFormsV05._1
             }
 
 
-
-            // Crear un objeto Cliente con los datos ingresados
             Cliente nuevoCliente = new Cliente
             {
                 Nombre = nombre,
@@ -102,13 +100,11 @@ namespace ProyectoCaiFormsV05._1
                 TipoDocumento = tipoDocumento,
                 Documento = documento,
                 Email = mail
-                // Agrega aquí los demás campos que desees incluir en el cliente
+                
             };
 
-            // Llamar al método "GenerarNuevoCliente" de la clase "ModuloCliente"
+            
             ModuloCliente.GenerarNuevoCliente(nuevoCliente);
-
-
 
 
             // Cierra el formulario "PresupuestoClienteForm"

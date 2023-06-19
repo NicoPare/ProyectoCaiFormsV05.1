@@ -15,16 +15,12 @@ namespace ProyectoCaiFormsV05._1.Archivos
         static PresupuestosArchivo()
         {
             //si existe el archivo...
-            //if (File.Exists("Presupuestos.json"))
-            if (File.Exists("C:\\Users\\npare\\source\\repos\\ProyectoCaiFormsV05.1\\ProyectoCaiFormsV05.1\\Datos\\Presupuestos.json"))
+            if (File.Exists("Presupuestos.json"))
             {
                 //lee TODO el contenido del archivo.
-                //string contenidoDelArchivo = File.ReadAllText("Presupuestos.json");
-                string contenidoDelArchivo = File.ReadAllText("C:\\Users\\npare\\source\\repos\\ProyectoCaiFormsV05.1\\ProyectoCaiFormsV05.1\\Datos\\Presupuestos.json");
+                string contenidoDelArchivo = File.ReadAllText("Presupuestos.json");                
 
                 //esta linea convierte el texto
-                //de vuelta a objetos de tipo PersonaEnt;
-
                 todos = JsonConvert.DeserializeObject<List<Presupuesto>>(contenidoDelArchivo);
             }
             else
@@ -41,8 +37,7 @@ namespace ProyectoCaiFormsV05._1.Archivos
         public static void GuardarTodos(List<Presupuesto> presupuestos)
         {
             string contenido = JsonConvert.SerializeObject(presupuestos);
-            //File.WriteAllText("Cliente.json", contenido);
-            File.WriteAllText("C:\\Users\\npare\\source\\repos\\ProyectoCaiFormsV05.1\\ProyectoCaiFormsV05.1\\Datos\\Presupuestos.json", contenido);
+            File.WriteAllText("Cliente.json", contenido);            
         }
 
     }

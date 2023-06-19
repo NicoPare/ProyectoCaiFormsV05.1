@@ -15,13 +15,13 @@ namespace ProyectoCaiFormsV05._1.Modulos
 
         public void ProcesarVuelosYAlojamientos()
         {
-            // Leer los vuelos desde el archivo JSON
+            // Leo los vuelos desde el archivo JSON
             List<Vuelo> vuelos = VuelosArchivo.ObtenerTodas();
 
-            // Leer los alojamientos desde el archivo JSON
+            // Leo los alojamientos desde el archivo JSON
             List<Alojamiento> alojamientos = AlojamientosArchivo.ObtenerTodas();
 
-            // Procesar los vuelos y obtener los productos correspondientes
+            // Proceso los vuelos
             List<Producto> productos = new List<Producto>();
 
             foreach (Vuelo vuelo in vuelos)
@@ -31,7 +31,7 @@ namespace ProyectoCaiFormsV05._1.Modulos
                 productos.Add(producto);
             }
 
-            // Procesar los alojamientos y obtener los productos correspondientes
+            // Procesar los alojamientos
             foreach (Alojamiento alojamiento in alojamientos)
             {
                 string codigoProducto = GenerarCodigoAleatorio();
@@ -46,11 +46,10 @@ namespace ProyectoCaiFormsV05._1.Modulos
 
         private void GuardarProductosEnArchivo(List<Producto> productos)
         {
-            // Serializar los productos en formato JSON
             string productosJson = JsonConvert.SerializeObject(productos, Newtonsoft.Json.Formatting.Indented);
 
             // Guardar los productos en el archivo JSON
-            File.WriteAllText("C:\\Users\\npare\\source\\repos\\ProyectoCaiFormsV05.1\\ProyectoCaiFormsV05.1\\Datos\\Productos.json", productosJson);
+            File.WriteAllText("Productos.json", productosJson);
             
         }
 
@@ -72,71 +71,13 @@ namespace ProyectoCaiFormsV05._1.Modulos
             productos = new List<Producto>();
         }
 
-        // Consulta de vuelos
+        
 
-        /*
+        //CONSULTA DE VUELOS
         public List<dynamic> ConsultarVuelos(string origen, string destino, DateTime fechaIda, DateTime? fechaVuelta,
         int cantidadAdultos, int cantidadMenores, int cantidadInfantes)
         {
-
-            string jsonFilePath = "C:\\Users\\npare\\source\\repos\\ProyectoCaiFormsV05.1\\ProyectoCaiFormsV05.1\\Datos\\Productos.json"; // Ruta del archivo JSON
-            
-
-            // Leer el contenido del archivo JSON
-            string jsonContent = File.ReadAllText(jsonFilePath);
-
-            // Deserializar el contenido JSON a una lista de objetos Producto
-            List<Producto> productos = JsonConvert.DeserializeObject<List<Producto>>(jsonContent);
-
-            List<dynamic> vuelosDisponibles = new List<dynamic>();
-
-
-
-            foreach (Producto producto in productos)
-            {
-                if (producto.Vuelo != null && producto.Vuelo.Origen == origen && producto.Vuelo.Destino == destino)
-                {
-                    DateTime fechaHoraSalida = producto.Vuelo.FechaHoraSalida.Date;
-
-                    if (fechaIda.Date == fechaHoraSalida.Date) //&&
-                        //(fechaVuelta == null || fechaVuelta.Value.Date == fechaHoraSalida.Date))
-                    {
-                        var vueloSimplificado = new
-                        {
-                            CodVuelo = producto.Vuelo.CodVuelo,
-                            Origen = producto.Vuelo.Origen,
-                            Destino = producto.Vuelo.Destino,
-                            FechaHoraSalida = producto.Vuelo.FechaHoraSalida,
-                            FechaHoraArribo = producto.Vuelo.FechaHoraArribo,
-                            Aerolinea = producto.Vuelo.Aerolinea,
-                            Tarifas = producto.Vuelo.Tarifa
-                            .Where(t => (cantidadMenores == 0 && cantidadInfantes == 0 && t.TipoPasajero == "Adulto") ||
-                                        (cantidadMenores > 0 && cantidadInfantes == 0 &&
-                                         (t.TipoPasajero == "Adulto" || t.TipoPasajero == "Menor")) ||
-                                        (cantidadMenores == 0 && cantidadInfantes > 0 &&
-                                         (t.TipoPasajero == "Adulto" || t.TipoPasajero == "Infante")) ||
-                                        (cantidadMenores > 0 && cantidadInfantes > 0))
-                            .Select(t => new
-                            {
-                                Precio = t.Precio,
-                                ClaseVuelo = t.ClaseVuelo,
-                                TipoPasajero = t.TipoPasajero
-                            }).ToList()
-                        };
-
-                        vuelosDisponibles.Add(vueloSimplificado);
-                    }
-                }
-            }
-
-            return vuelosDisponibles;
-        }*/
-
-        //NUEVA VERSION CONSULTA DE VUELOS
-        public List<dynamic> ConsultarVuelos(string origen, string destino, DateTime fechaIda, DateTime? fechaVuelta,
-        int cantidadAdultos, int cantidadMenores, int cantidadInfantes)
-        {
-            string jsonFilePath = "C:\\Users\\npare\\source\\repos\\ProyectoCaiFormsV05.1\\ProyectoCaiFormsV05.1\\Datos\\Productos.json";
+            string jsonFilePath = "Productos.json";
 
             string jsonContent = File.ReadAllText(jsonFilePath);
             List<Producto> productos = JsonConvert.DeserializeObject<List<Producto>>(jsonContent);
@@ -219,15 +160,12 @@ namespace ProyectoCaiFormsV05._1.Modulos
             return vuelosDisponibles;
         }
 
-
-
-
-        // Consulta de Alojamientos
+        // CONSULTA DE ALOJAMIENTOS
 
         public List<dynamic> ConsultarAlojamiento(string destino, DateTime fechaIngreso, DateTime fechaEgreso,
         int cantidadAdultos, int cantidadMenores, int cantidadInfantes, int calificacion)
         {
-            string jsonFilePath = "C:\\Users\\npare\\source\\repos\\ProyectoCaiFormsV05.1\\ProyectoCaiFormsV05.1\\Datos\\Productos.json"; // Ruta del archivo JSON            
+            string jsonFilePath = "Productos.json";        
 
             // Leer el contenido del archivo JSON
             string jsonContent = File.ReadAllText(jsonFilePath);

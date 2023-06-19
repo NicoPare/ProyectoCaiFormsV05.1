@@ -1,4 +1,5 @@
-﻿using ProyectoCaiFormsV05._1.Entidades;
+﻿using Newtonsoft.Json;
+using ProyectoCaiFormsV05._1.Entidades;
 using System;
 using System.Collections.Generic;
 using System.ComponentModel;
@@ -12,13 +13,13 @@ using System.Windows.Forms;
 
 namespace ProyectoCaiFormsV05._1
 {
-    
 
-    //nuevo codigo
     public partial class AlojamientosDisponiblesForm : Form
     {
         private List<dynamic> alojamientosDisponibles;
         private List<PresupuestoLineaAlojamiento> presupuestoLineaAlojamiento;
+
+        
 
         public AlojamientosDisponiblesForm(List<dynamic> alojamientosDisponibles)
         {
@@ -48,7 +49,7 @@ namespace ProyectoCaiFormsV05._1
                 dgvAlojamientosDisponibles.Rows.Add(
                     alojamiento.CodCiudad,
                     alojamiento.FechaIngreso.ToString("dd/MM/yyy"),
-                    alojamiento.FechaSalida.ToString("dd/MM/yyy"),                    
+                    alojamiento.FechaSalida.ToString("dd/MM/yyy"),
                     alojamiento.NombreAlojamiento,
                     alojamiento.Tarifa,
                     alojamiento.NombreHabitacion,
@@ -58,7 +59,7 @@ namespace ProyectoCaiFormsV05._1
 
         }
 
-        private void btnAgregarAlPresupuesto_Click(object sender, EventArgs e)
+        public void btnAgregarAlPresupuesto_Click(object sender, EventArgs e)
         {
             if (dgvAlojamientosDisponibles.SelectedRows.Count > 0)
             {
@@ -81,6 +82,13 @@ namespace ProyectoCaiFormsV05._1
                 MessageBox.Show("Seleccione una fila para agregar al presupuesto.", "Error", MessageBoxButtons.OK, MessageBoxIcon.Error);
             }
         }
+
+
+        public List<PresupuestoLineaAlojamiento> ObtenerLineasAlojamientoPresupuesto()
+        {
+            return presupuestoLineaAlojamiento;
+        }
+
 
 
     }

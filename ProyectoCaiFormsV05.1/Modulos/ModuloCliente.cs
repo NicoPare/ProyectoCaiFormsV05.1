@@ -11,27 +11,29 @@ namespace ProyectoCaiFormsV05._1.Modulos
     public static class ModuloCliente
     {
 
+        //Método para crear el CodCliente y crear cliente en la entidad
         public static void GenerarNuevoCliente(Cliente nuevoCliente)
         {
-            // Obtener la lista actual de clientes desde "ClientesArchivo.cs"
+            // obtengo la lista actual de clientes desde "ClientesArchivo.cs"
             List<Cliente> clientesExistentes = ClientesArchivo.ObtenerTodas();
 
-            // Obtener el último código de cliente registrado
+            // obtengo el último código de cliente registrado
             int ultimoCodigoCliente = ObtenerUltimoCodigoCliente(clientesExistentes);
 
-            // Incrementar el código del cliente para el nuevo cliente
+            // incremento el código del último cliente para el nuevo cliente
             int nuevoCodigoCliente = ultimoCodigoCliente + 1;
 
-            // Asignar el código de cliente al nuevo cliente
+            // asigno el código de cliente al nuevo cliente
             nuevoCliente.CodCliente = nuevoCodigoCliente;
 
-            // Agregar el nuevo cliente a la lista
+            // agrego el nuevo cliente a la lista
             clientesExistentes.Add(nuevoCliente);
 
-            // Guardar la lista actualizada de clientes en "ClientesArchivo.cs"
+            // guardo la lista actualizada de clientes en "ClientesArchivo.cs"
             ClientesArchivo.GuardarTodos(clientesExistentes);
         }
 
+        
         public static int ObtenerUltimoCodigoCliente(List<Cliente> clientes)
         {
             int ultimoCodigo = 0;

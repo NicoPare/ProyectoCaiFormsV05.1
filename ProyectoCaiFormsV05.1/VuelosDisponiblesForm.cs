@@ -11,11 +11,11 @@ using ProyectoCaiFormsV05._1.Entidades;
 
 namespace ProyectoCaiFormsV05._1
 {
- 
+
     public partial class VuelosDisponiblesForm : Form
     {
         private List<dynamic> vuelosDisponibles;
-        private List<PresupuestoLineaVuelo> presupuestoLineaVuelo;        
+        private List<PresupuestoLineaVuelo> presupuestoLineaVuelo;
 
         public VuelosDisponiblesForm(List<dynamic> vuelosDisponibles)
         {
@@ -83,9 +83,9 @@ namespace ProyectoCaiFormsV05._1
             }
         }
 
-        private void btnVerPresupuesto_Click(object sender, EventArgs e)
+        public void btnVerPresupuesto_Click(object sender, EventArgs e)
         {
-            PresupuestoForm presupuestoForm = new PresupuestoForm(presupuestoLineaVuelo);
+            PresupuestoForm presupuestoForm = new PresupuestoForm(presupuestoLineaVuelo/*, lineasAlojamiento*/);
             presupuestoForm.Show();
         }
     }

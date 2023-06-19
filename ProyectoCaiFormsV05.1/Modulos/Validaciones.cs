@@ -14,10 +14,9 @@ namespace ProyectoCaiFormsV05._1.Modulos
         // Método para validar el código de la ciudad ingresado por el usuario
         public static bool ValidarCodigoCiudad(string codCiudad)
         {
-            // Leer el archivo JSON de ciudades
-            string jsonCiudades = File.ReadAllText("C:\\Users\\npare\\source\\repos\\ProyectoCaiFormsV05.1\\ProyectoCaiFormsV05.1\\Datos\\Ciudades.json");
-
-            // Deserializar JSON a una lista de objetos Ciudad
+            
+            string jsonCiudades = File.ReadAllText("Ciudades.json");
+            
             List<Ciudad> ciudades = JsonConvert.DeserializeObject<List<Ciudad>>(jsonCiudades);
 
             // Verificar si el código de la ciudad ingresado existe en la lista
@@ -25,34 +24,31 @@ namespace ProyectoCaiFormsV05._1.Modulos
             {
                 if (ciudad.Codigo == codCiudad)
                 {
-                    return true; // El código de la ciudad es válido
+                    return true;
                 }
             }
 
             Console.WriteLine("Error: El código de la ciudad ingresado no es válido.");
-            return false; // El código de la ciudad no es válido
+            return false;
         }
 
         // Método para validar el código del aeropuerto ingresado por el usuario
         public static bool ValidarCodigoAeropuerto(string codAeropuerto)
-        {
-            // Leer el archivo JSON de aeropuertos
-            string jsonAeropuertos = File.ReadAllText("C:\\Users\\npare\\source\\repos\\ProyectoCaiFormsV05.1\\ProyectoCaiFormsV05.1\\Datos\\Aeropuertos.json");
+        {            
+            string jsonAeropuertos = File.ReadAllText("Aeropuertos.json");
 
-            // Deserializar JSON a una lista de objetos Aeropuerto
             List <Aeropuerto> aeropuertos = JsonConvert.DeserializeObject<List<Aeropuerto>>(jsonAeropuertos);
 
-            // Verificar si el código del aeropuerto ingresado existe en la lista
             foreach (Aeropuerto aeropuerto in aeropuertos)
             {
                 if (aeropuerto.Codigo == codAeropuerto)
                 {
-                    return true; // El código del aeropuerto es válido
+                    return true;
                 }
             }
 
             Console.WriteLine("Error: El código del aeropuerto ingresado no es válido.");
-            return false; // El código del aeropuerto no es válido
+            return false;
         }
         public static bool ValidarFecha(string fecha)
         {
@@ -125,14 +121,10 @@ namespace ProyectoCaiFormsV05._1.Modulos
                 
 
         public static bool ValidarPais(string pais)
-        {
-            // Cargar los datos del archivo Paises.json
-            //string paisesJson = File.ReadAllText("Paises.json");
-            string paisesJson = File.ReadAllText("C:\\Users\\npare\\source\\repos\\ProyectoCaiFormsV05.1\\ProyectoCaiFormsV05.1\\Datos\\Paises.json");
-
-            // Deserializar el archivo JSON a una lista de países
+        {            
+            string paisesJson = File.ReadAllText("Paises.json");
+         
             var paises = JsonConvert.DeserializeObject<List<Pais>>(paisesJson);
-
 
             // Verificar si el país está en la lista de países
             if (!paises.Any(p => p.nombre.Equals(pais, StringComparison.OrdinalIgnoreCase)))
@@ -148,11 +140,9 @@ namespace ProyectoCaiFormsV05._1.Modulos
 
 
         public static bool ValidarTipoDocumento(string tipoDocumento)
-        {
-            // Cargar los tipos de documentos permitidos desde algún origen de datos
+        {            
             var tiposDocumentoPermitidos = new List<string> { "DNI", "Pasaporte", "Cédula" };
-
-            // Verificar si el tipo de documento está en la lista de tipos permitidos
+         
             if (!tiposDocumentoPermitidos.Contains(tipoDocumento, StringComparer.OrdinalIgnoreCase))
             {
                 Console.WriteLine("Error: Tipo de documento inválido, por favor, revise la ortografía.");
@@ -196,22 +186,19 @@ namespace ProyectoCaiFormsV05._1.Modulos
                 Console.WriteLine("Error: La cantidad de pasajeros adultos debe ser igual o mayor a la suma de menores e infantes.");
                 return false;
             }
-
-            // Verificar si la cantidad de pasajeros adultos es mayor a 0
+            
             if (cantidadAdultos <= 0)
             {
                 MessageBox.Show("La cantidad de pasajeros adultos debe ser mayor a 0.", "Error de fechas", MessageBoxButtons.OK, MessageBoxIcon.Error);
                 return false;
             }
-
-            // Verificar si la cantidad de menores es mayor o igual a 0
+            
             if (cantidadMenores < 0)
             {
                 Console.WriteLine("Error: La cantidad de pasajeros menores debe ser mayor o igual a 0.");
                 return false;
             }
-
-            // Verificar si la cantidad de infantes es mayor o igual a 0
+            
             if (cantidadInfantes < 0)
             {
                 Console.WriteLine("Error: La cantidad de pasajeros infantes debe ser mayor o igual a 0.");

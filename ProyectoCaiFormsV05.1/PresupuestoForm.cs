@@ -47,7 +47,7 @@ namespace ProyectoCaiFormsV05._1
                 string codigo = GenerateUniqueCode();
                 dataGridView1.Rows.Add(codigo, lineaVuelo.Origen, lineaVuelo.Destino, lineaVuelo.FechaHoraSalida,
                     lineaVuelo.FechaHoraArribo, lineaVuelo.Aerolinea, lineaVuelo.Precio, lineaVuelo.ClaseVuelo, lineaVuelo.TipoPasajero);
-            }            
+            }
 
         }
 

@@ -14,19 +14,19 @@
         "CapacidadInfantes": 0,
         "DisponibilidadHabitacion": [
           {
-            "Fecha": "07/01/2023",
+            "Fecha": "2023-07-01 00:00:00",
             "CantidadDisponible": 9
           },
           {
-            "Fecha": "07/02/2023",
+            "Fecha": "2023-07-02 00:00:00",
             "CantidadDisponible": 9
           },
           {
-            "Fecha": "07/03/2023",
+            "Fecha": "2023-07-03 00:00:00",
             "CantidadDisponible": 10
           },
           {
-            "Fecha": "07/04/2023",
+            "Fecha": "2023-07-04 00:00:00",
             "CantidadDisponible": 10
           }
         ]
@@ -39,19 +39,19 @@
         "CapacidadInfantes": 0,
         "DisponibilidadHabitacion": [
           {
-            "Fecha": "07/01/2023",
+            "Fecha": "2023-07-01 00:00:00",
             "CantidadDisponible": 3
           },
           {
-            "Fecha": "07/02/2023",
+            "Fecha": "2023-07-02 00:00:00",
             "CantidadDisponible": 4
           },
           {
-            "Fecha": "07/03/2023",
+            "Fecha": "2023-07-03 00:00:00",
             "CantidadDisponible": 5
           },
           {
-            "Fecha": "07/04/2023",
+            "Fecha": "2023-07-04 00:00:00",
             "CantidadDisponible": 5
           }
         ]
@@ -64,19 +64,19 @@
         "CapacidadInfantes": 1,
         "DisponibilidadHabitacion": [
           {
-            "Fecha": "07/01/2023",
+            "Fecha": "2023-07-01 00:00:00",
             "CantidadDisponible": 10
           },
           {
-            "Fecha": "07/02/2023",
+            "Fecha": "2023-07-02 00:00:00",
             "CantidadDisponible": 8
           },
           {
-            "Fecha": "07/03/2023",
+            "Fecha": "2023-07-03 00:00:00",
             "CantidadDisponible": 8
           },
           {
-            "Fecha": "07/04/2023",
+            "Fecha": "2023-07-04 00:00:00",
             "CantidadDisponible": 9
           }
         ]
@@ -89,19 +89,19 @@
         "CapacidadInfantes": 1,
         "DisponibilidadHabitacion": [
           {
-            "Fecha": "07/01/2023",
+            "Fecha": "2023-07-01 00:00:00",
             "CantidadDisponible": 5
           },
           {
-            "Fecha": "07/02/2023",
+            "Fecha": "2023-07-02 00:00:00",
             "CantidadDisponible": 4
           },
           {
-            "Fecha": "07/03/2023",
+            "Fecha": "2023-07-03 00:00:00",
             "CantidadDisponible": 3
           },
           {
-            "Fecha": "07/04/2023",
+            "Fecha": "2023-07-04 00:00:00",
             "CantidadDisponible": 4
           }
         ]
@@ -123,19 +123,19 @@
         "CapacidadInfantes": 0,
         "DisponibilidadHabitacion": [
           {
-            "Fecha": "07/01/2023",
+            "Fecha": "2023-07-01 00:00:00",
             "CantidadDisponible": 8
           },
           {
-            "Fecha": "07/02/2023",
+            "Fecha": "2023-07-02 00:00:00",
             "CantidadDisponible": 6
           },
           {
-            "Fecha": "07/03/2023",
+            "Fecha": "2023-07-03 00:00:00",
             "CantidadDisponible": 6
           },
           {
-            "Fecha": "07/04/2023",
+            "Fecha": "2023-07-04 00:00:00",
             "CantidadDisponible": 5
           }
         ]
@@ -148,19 +148,19 @@
         "CapacidadInfantes": 0,
         "DisponibilidadHabitacion": [
           {
-            "Fecha": "07/01/2023",
+            "Fecha": "2023-07-01 00:00:00",
             "CantidadDisponible": 4
           },
           {
-            "Fecha": "07/02/2023",
+            "Fecha": "2023-07-02 00:00:00",
             "CantidadDisponible": 3
           },
           {
-            "Fecha": "07/03/2023",
+            "Fecha": "2023-07-03 00:00:00",
             "CantidadDisponible": 4
           },
           {
-            "Fecha": "07/04/2023",
+            "Fecha": "2023-07-04 00:00:00",
             "CantidadDisponible": 4
           }
         ]
@@ -173,19 +173,19 @@
         "CapacidadInfantes": 0,
         "DisponibilidadHabitacion": [
           {
-            "Fecha": "07/01/2023",
+            "Fecha": "2023-07-01 00:00:00",
             "CantidadDisponible": 8
           },
           {
-            "Fecha": "07/02/2023",
+            "Fecha": "2023-07-02 00:00:00",
             "CantidadDisponible": 5
           },
           {
-            "Fecha": "07/03/2023",
+            "Fecha": "2023-07-03 00:00:00",
             "CantidadDisponible": 5
           },
           {
-            "Fecha": "07/04/2023",
+            "Fecha": "2023-07-04 00:00:00",
             "CantidadDisponible": 5
           }
         ]
@@ -198,19 +198,19 @@
         "CapacidadInfantes": 0,
         "DisponibilidadHabitacion": [
           {
-            "Fecha": "07/01/2023",
+            "Fecha": "2023-07-01 00:00:00",
             "CantidadDisponible": 4
           },
           {
-            "Fecha": "07/02/2023",
+            "Fecha": "2023-07-02 00:00:00",
             "CantidadDisponible": 1
           },
           {
-            "Fecha": "07/03/2023",
+            "Fecha": "2023-07-03 00:00:00",
             "CantidadDisponible": 1
           },
           {
-            "Fecha": "07/04/2023",
+            "Fecha": "2023-07-04 00:00:00",
             "CantidadDisponible": 1
           }
         ]
@@ -223,19 +223,19 @@
         "CapacidadInfantes": 1,
         "DisponibilidadHabitacion": [
           {
-            "Fecha": "07/01/2023",
+            "Fecha": "2023-07-01 00:00:00",
             "CantidadDisponible": 5
           },
           {
-            "Fecha": "07/02/2023",
+            "Fecha": "2023-07-02 00:00:00",
             "CantidadDisponible": 3
           },
           {
-            "Fecha": "07/03/2023",
+            "Fecha": "2023-07-03 00:00:00",
             "CantidadDisponible": 5
           },
           {
-            "Fecha": "07/04/2023",
+            "Fecha": "2023-07-04 00:00:00",
             "CantidadDisponible": 5
           }
         ]
@@ -257,19 +257,19 @@
         "CapacidadInfantes": 2,
         "DisponibilidadHabitacion": [
           {
-            "Fecha": "07/01/2023",
+            "Fecha": "2023-07-01 00:00:00",
             "CantidadDisponible": 5
           },
           {
-            "Fecha": "07/02/2023",
+            "Fecha": "2023-07-02 00:00:00",
             "CantidadDisponible": 2
           },
           {
-            "Fecha": "07/03/2023",
+            "Fecha": "2023-07-03 00:00:00",
             "CantidadDisponible": 2
           },
           {
-            "Fecha": "07/04/2023",
+            "Fecha": "2023-07-04 00:00:00",
             "CantidadDisponible": 2
           }
         ]
@@ -282,19 +282,19 @@
         "CapacidadInfantes": 0,
         "DisponibilidadHabitacion": [
           {
-            "Fecha": "07/01/2023",
+            "Fecha": "2023-07-01 00:00:00",
             "CantidadDisponible": 5
           },
           {
-            "Fecha": "07/02/2023",
+            "Fecha": "2023-07-02 00:00:00",
             "CantidadDisponible": 4
           },
           {
-            "Fecha": "07/03/2023",
+            "Fecha": "2023-07-03 00:00:00",
             "CantidadDisponible": 4
           },
           {
-            "Fecha": "07/04/2023",
+            "Fecha": "2023-07-04 00:00:00",
             "CantidadDisponible": 4
           }
         ]
@@ -307,19 +307,19 @@
         "CapacidadInfantes": 0,
         "DisponibilidadHabitacion": [
           {
-            "Fecha": "07/01/2023",
+            "Fecha": "2023-07-01 00:00:00",
             "CantidadDisponible": 3
           },
           {
-            "Fecha": "07/02/2023",
+            "Fecha": "2023-07-02 00:00:00",
             "CantidadDisponible": 2
           },
           {
-            "Fecha": "07/03/2023",
+            "Fecha": "2023-07-03 00:00:00",
             "CantidadDisponible": 2
           },
           {
-            "Fecha": "07/04/2023",
+            "Fecha": "2023-07-04 00:00:00",
             "CantidadDisponible": 3
           }
         ]
@@ -341,19 +341,19 @@
         "CapacidadInfantes": 0,
         "DisponibilidadHabitacion": [
           {
-            "Fecha": "07/01/2023",
+            "Fecha": "2023-07-01 00:00:00",
             "CantidadDisponible": 5
           },
           {
-            "Fecha": "07/02/2023",
+            "Fecha": "2023-07-02 00:00:00",
             "CantidadDisponible": 2
           },
           {
-            "Fecha": "07/03/2023",
+            "Fecha": "2023-07-03 00:00:00",
             "CantidadDisponible": 2
           },
           {
-            "Fecha": "07/04/2023",
+            "Fecha": "2023-07-04 00:00:00",
             "CantidadDisponible": 2
           }
         ]
@@ -366,19 +366,19 @@
         "CapacidadInfantes": 0,
         "DisponibilidadHabitacion": [
           {
-            "Fecha": "07/01/2023",
+            "Fecha": "2023-07-01 00:00:00",
             "CantidadDisponible": 5
           },
           {
-            "Fecha": "07/02/2023",
+            "Fecha": "2023-07-02 00:00:00",
             "CantidadDisponible": 3
           },
           {
-            "Fecha": "07/03/2023",
+            "Fecha": "2023-07-03 00:00:00",
             "CantidadDisponible": 3
           },
           {
-            "Fecha": "07/04/2023",
+            "Fecha": "2023-07-04 00:00:00",
             "CantidadDisponible": 4
           }
         ]
@@ -391,19 +391,19 @@
         "CapacidadInfantes": 1,
         "DisponibilidadHabitacion": [
           {
-            "Fecha": "07/01/2023",
+            "Fecha": "2023-07-01 00:00:00",
             "CantidadDisponible": 5
           },
           {
-            "Fecha": "07/02/2023",
+            "Fecha": "2023-07-02 00:00:00",
             "CantidadDisponible": 2
           },
           {
-            "Fecha": "07/03/2023",
+            "Fecha": "2023-07-03 00:00:00",
             "CantidadDisponible": 2
           },
           {
-            "Fecha": "07/04/2023",
+            "Fecha": "2023-07-04 00:00:00",
             "CantidadDisponible": 2
           }
         ]
@@ -416,19 +416,19 @@
         "CapacidadInfantes": 0,
         "DisponibilidadHabitacion": [
           {
-            "Fecha": "07/01/2023",
+            "Fecha": "2023-07-01 00:00:00",
             "CantidadDisponible": 3
           },
           {
-            "Fecha": "07/02/2023",
+            "Fecha": "2023-07-02 00:00:00",
             "CantidadDisponible": 2
           },
           {
-            "Fecha": "07/03/2023",
+            "Fecha": "2023-07-03 00:00:00",
             "CantidadDisponible": 2
           },
           {
-            "Fecha": "07/04/2023",
+            "Fecha": "2023-07-04 00:00:00",
             "CantidadDisponible": 2
           }
         ]

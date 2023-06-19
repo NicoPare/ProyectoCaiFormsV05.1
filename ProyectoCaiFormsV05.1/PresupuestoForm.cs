@@ -12,18 +12,20 @@ using System.Threading.Tasks;
 using System.Windows.Forms;
 
 namespace ProyectoCaiFormsV05._1
-{    
+{
     public partial class PresupuestoForm : Form
     {
         private List<PresupuestoLineaVuelo> presupuestoLineaVuelo;
+        //private List<PresupuestoLineaAlojamiento> presupuestoLineaAlojamientos;//adicion
 
-        
+
         private List<Presupuesto> presupuestos;
 
         public PresupuestoForm(List<PresupuestoLineaVuelo> presupuestoLineaVuelo)
         {
             InitializeComponent();
             this.presupuestoLineaVuelo = presupuestoLineaVuelo;
+            //this.presupuestoLineaAlojamientos = presupuestoLineaAlojamientos;//adicion
             PopulateDataGridView();
         }
 
@@ -45,8 +47,11 @@ namespace ProyectoCaiFormsV05._1
                 string codigo = GenerateUniqueCode();
                 dataGridView1.Rows.Add(codigo, lineaVuelo.Origen, lineaVuelo.Destino, lineaVuelo.FechaHoraSalida,
                     lineaVuelo.FechaHoraArribo, lineaVuelo.Aerolinea, lineaVuelo.Precio, lineaVuelo.ClaseVuelo, lineaVuelo.TipoPasajero);
-            }
+            }            
+
         }
+
+
 
         private string GenerateUniqueCode()
         {
@@ -66,9 +71,9 @@ namespace ProyectoCaiFormsV05._1
         }
 
         private void btnConfirmar_Click(object sender, EventArgs e)
-        {            
+        {
 
-            
+
             PresupuestoClienteForm presupuestoClienteForm = new PresupuestoClienteForm();
             presupuestoClienteForm.FormClosed += PresupuestoClienteForm_FormClosed;
             presupuestoClienteForm.ShowDialog();
@@ -86,7 +91,7 @@ namespace ProyectoCaiFormsV05._1
                 PresupuestosArchivo.GuardarTodos(presupuestos);
             }
         }
-        
+
 
     }
 

@@ -13,12 +13,19 @@ namespace ProyectoCaiFormsV05._1.Modulos
 
         public static List<Presupuesto> CrearPresupuesto(List<PresupuestoLineaVuelo> presupuestoLineaVuelo, Cliente cliente)
         {
+
+            //Me traigo el último cliente agregado para asignarlo al presupuesto por crear
+            List<Cliente> clientesExistentes = ClientesArchivo.ObtenerTodas();
+            int ultimoCodigoCliente = ModuloCliente.ObtenerUltimoCodigoCliente(clientesExistentes);
+            int nuevoCodigoCliente = ultimoCodigoCliente + 1;
+
             List<Presupuesto> presupuestos = PresupuestosArchivo.ObtenerTodas();
 
             string codPresupuesto = GenerateUniqueCode();
             Presupuesto presupuesto = new Presupuesto
             {
-                CodPresupuesto = codPresupuesto,
+                CodPresupuesto = codPresupuesto,            
+                CodCliente = nuevoCodigoCliente,
                 PresupuestoLineaVuelo = presupuestoLineaVuelo,
                 PresupuestoLineaAlojamiento = null
             };
@@ -27,6 +34,7 @@ namespace ProyectoCaiFormsV05._1.Modulos
 
             return presupuestos;
         }
+
 
         private static string GenerateUniqueCode()
         {

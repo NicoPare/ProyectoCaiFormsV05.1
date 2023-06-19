@@ -17,7 +17,7 @@ namespace ProyectoCaiFormsV05._1
     {
         private List<PresupuestoLineaVuelo> presupuestoLineaVuelo;
 
-        // ADICION
+        
         private List<Presupuesto> presupuestos;
 
         public PresupuestoForm(List<PresupuestoLineaVuelo> presupuestoLineaVuelo)
@@ -66,18 +66,15 @@ namespace ProyectoCaiFormsV05._1
         }
 
         private void btnConfirmar_Click(object sender, EventArgs e)
-        {
-            /*
-            PresupuestoClienteForm presupuestoClienteForm = new PresupuestoClienteForm();
-            presupuestoClienteForm.ShowDialog();*/
+        {            
 
-            //MODIFICACION
+            
             PresupuestoClienteForm presupuestoClienteForm = new PresupuestoClienteForm();
             presupuestoClienteForm.FormClosed += PresupuestoClienteForm_FormClosed;
             presupuestoClienteForm.ShowDialog();
         }
 
-        //ADICION
+        //Creo Presupuesto luego de que se Guarde el cliente en PresupuestoClienteForm
         private void PresupuestoClienteForm_FormClosed(object sender, FormClosedEventArgs e)
         {
             PresupuestoClienteForm presupuestoClienteForm = (PresupuestoClienteForm)sender;
@@ -89,6 +86,7 @@ namespace ProyectoCaiFormsV05._1
                 PresupuestosArchivo.GuardarTodos(presupuestos);
             }
         }
+        
 
     }
 

@@ -32,7 +32,7 @@ namespace ProyectoCaiFormsV05._1.Modulos
             ClientesArchivo.GuardarTodos(clientesExistentes);
         }
 
-        private static int ObtenerUltimoCodigoCliente(List<Cliente> clientes)
+        public static int ObtenerUltimoCodigoCliente(List<Cliente> clientes)
         {
             int ultimoCodigo = 0;
 

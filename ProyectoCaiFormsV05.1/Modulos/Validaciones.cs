@@ -122,6 +122,7 @@ namespace ProyectoCaiFormsV05._1.Modulos
 
             return true;
         }
+                
 
         public static bool ValidarPais(string pais)
         {
@@ -130,11 +131,11 @@ namespace ProyectoCaiFormsV05._1.Modulos
             string paisesJson = File.ReadAllText("C:\\Users\\npare\\source\\repos\\ProyectoCaiFormsV05.1\\ProyectoCaiFormsV05.1\\Datos\\Paises.json");
 
             // Deserializar el archivo JSON a una lista de países
-            var paises = JsonConvert.DeserializeObject<string[]>(paisesJson);
-            
+            var paises = JsonConvert.DeserializeObject<List<Pais>>(paisesJson);
+
 
             // Verificar si el país está en la lista de países
-            if (!paises.Any(p => p.Equals(pais, StringComparison.OrdinalIgnoreCase)))
+            if (!paises.Any(p => p.nombre.Equals(pais, StringComparison.OrdinalIgnoreCase)))
             {
                 Console.WriteLine("Error: País no encontrado, por favor, revise la ortografía del país ingresado.");
                 return false;
@@ -142,6 +143,9 @@ namespace ProyectoCaiFormsV05._1.Modulos
 
             return true;
         }
+
+
+
 
         public static bool ValidarTipoDocumento(string tipoDocumento)
         {

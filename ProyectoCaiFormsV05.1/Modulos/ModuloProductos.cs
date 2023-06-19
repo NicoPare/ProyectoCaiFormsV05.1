@@ -73,7 +73,8 @@ namespace ProyectoCaiFormsV05._1.Modulos
         }
 
         // Consulta de vuelos
-       
+
+        /*
         public List<dynamic> ConsultarVuelos(string origen, string destino, DateTime fechaIda, DateTime? fechaVuelta,
         int cantidadAdultos, int cantidadMenores, int cantidadInfantes)
         {
@@ -97,8 +98,8 @@ namespace ProyectoCaiFormsV05._1.Modulos
                 {
                     DateTime fechaHoraSalida = producto.Vuelo.FechaHoraSalida.Date;
 
-                    if (fechaIda.Date == fechaHoraSalida.Date) /*&&
-                        (fechaVuelta == null || fechaVuelta.Value.Date == fechaHoraSalida.Date))*/
+                    if (fechaIda.Date == fechaHoraSalida.Date) //&&
+                        //(fechaVuelta == null || fechaVuelta.Value.Date == fechaHoraSalida.Date))
                     {
                         var vueloSimplificado = new
                         {
@@ -129,10 +130,100 @@ namespace ProyectoCaiFormsV05._1.Modulos
             }
 
             return vuelosDisponibles;
+        }*/
+
+        //NUEVA VERSION CONSULTA DE VUELOS
+        public List<dynamic> ConsultarVuelos(string origen, string destino, DateTime fechaIda, DateTime? fechaVuelta,
+        int cantidadAdultos, int cantidadMenores, int cantidadInfantes)
+        {
+            string jsonFilePath = "C:\\Users\\npare\\source\\repos\\ProyectoCaiFormsV05.1\\ProyectoCaiFormsV05.1\\Datos\\Productos.json";
+
+            string jsonContent = File.ReadAllText(jsonFilePath);
+            List<Producto> productos = JsonConvert.DeserializeObject<List<Producto>>(jsonContent);
+            List<dynamic> vuelosDisponibles = new List<dynamic>();
+
+            foreach (Producto producto in productos)
+            {
+                if (producto.Vuelo != null)
+                {
+                    if (producto.Vuelo.Origen == origen && producto.Vuelo.Destino == destino)
+                    {
+                        DateTime fechaHoraSalida = producto.Vuelo.FechaHoraSalida.Date;
+
+                        if ((fechaVuelta == null || fechaIda.Date == fechaHoraSalida.Date || fechaVuelta.Value.Date == fechaHoraSalida.Date) &&
+                            (!fechaVuelta.HasValue || fechaVuelta.Value.Date >= fechaIda.Date))
+                        {
+                            var vueloSimplificado = new
+                            {
+                                CodVuelo = producto.Vuelo.CodVuelo,
+                                Origen = producto.Vuelo.Origen,
+                                Destino = producto.Vuelo.Destino,
+                                FechaHoraSalida = producto.Vuelo.FechaHoraSalida,
+                                FechaHoraArribo = producto.Vuelo.FechaHoraArribo,
+                                Aerolinea = producto.Vuelo.Aerolinea,
+                                Tarifas = producto.Vuelo.Tarifa
+                                    .Where(t => (cantidadMenores == 0 && cantidadInfantes == 0 && t.TipoPasajero == "Adulto") ||
+                                                (cantidadMenores > 0 && cantidadInfantes == 0 &&
+                                                 (t.TipoPasajero == "Adulto" || t.TipoPasajero == "Menor")) ||
+                                                (cantidadMenores == 0 && cantidadInfantes > 0 &&
+                                                 (t.TipoPasajero == "Adulto" || t.TipoPasajero == "Infante")) ||
+                                                (cantidadMenores > 0 && cantidadInfantes > 0))
+                                    .Select(t => new
+                                    {
+                                        Precio = t.Precio,
+                                        ClaseVuelo = t.ClaseVuelo,
+                                        TipoPasajero = t.TipoPasajero
+                                    }).ToList()
+                            };
+
+                            vuelosDisponibles.Add(vueloSimplificado);
+                        }
+                    }
+                    else if (fechaVuelta.HasValue && producto.Vuelo.Origen == destino && producto.Vuelo.Destino == origen)
+                    {
+                        DateTime fechaHoraSalida = producto.Vuelo.FechaHoraSalida.Date;
+                        DateTime fechaHoraArribo = producto.Vuelo.FechaHoraArribo.Date;
+
+                        if (fechaHoraSalida >= fechaIda.Date && fechaHoraArribo <= fechaVuelta.Value.Date &&
+                            (!fechaVuelta.HasValue || fechaHoraSalida.Date <= fechaVuelta.Value.Date))
+                        {
+                            var vueloSimplificado = new
+                            {
+                                CodVuelo = producto.Vuelo.CodVuelo,
+                                Origen = producto.Vuelo.Origen,
+                                Destino = producto.Vuelo.Destino,
+                                FechaHoraSalida = producto.Vuelo.FechaHoraSalida,
+                                FechaHoraArribo = producto.Vuelo.FechaHoraArribo,
+                                Aerolinea = producto.Vuelo.Aerolinea,
+                                Tarifas = producto.Vuelo.Tarifa
+                                    .Where(t => (cantidadMenores == 0 && cantidadInfantes == 0 && t.TipoPasajero == "Adulto") ||
+                                                (cantidadMenores > 0 && cantidadInfantes == 0 &&
+                                                 (t.TipoPasajero == "Adulto" || t.TipoPasajero == "Menor")) ||
+                                                (cantidadMenores == 0 && cantidadInfantes > 0 &&
+                                                 (t.TipoPasajero == "Adulto" || t.TipoPasajero == "Infante")) ||
+                                                (cantidadMenores > 0 && cantidadInfantes > 0))
+                                    .Select(t => new
+                                    {
+                                        Precio = t.Precio,
+                                        ClaseVuelo = t.ClaseVuelo,
+                                        TipoPasajero = t.TipoPasajero
+                                    }).ToList()
+                            };
+
+                            vuelosDisponibles.Add(vueloSimplificado);
+                        }
+                    }
+                }
+            }
+
+            return vuelosDisponibles;
         }
 
+
+
+
         // Consulta de Alojamientos
-        
+
         public List<dynamic> ConsultarAlojamiento(string destino, DateTime fechaIngreso, DateTime fechaEgreso,
         int cantidadAdultos, int cantidadMenores, int cantidadInfantes, int calificacion)
         {

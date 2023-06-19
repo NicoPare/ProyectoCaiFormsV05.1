@@ -46,11 +46,11 @@ namespace ProyectoCaiFormsV05._1
                 return;
             }
 
-            /*if (!Validaciones.ValidarPais(paisResidencia))
+            if (!Validaciones.ValidarPais(paisResidencia))
             {
                 MessageBox.Show("El país ingresado no es valido. Por favor, ingrese revisando la ortografía del país ingresado.", "Error de validación", MessageBoxButtons.OK, MessageBoxIcon.Error);
                 return;
-            }*/
+            }
 
             if (!Validaciones.ValidarTipoDocumento(tipoDocumento))
             {
@@ -107,6 +107,8 @@ namespace ProyectoCaiFormsV05._1
 
             // Llamar al método "GenerarNuevoCliente" de la clase "ModuloCliente"
             ModuloCliente.GenerarNuevoCliente(nuevoCliente);
+
+
 
 
             // Cierra el formulario "PresupuestoClienteForm"

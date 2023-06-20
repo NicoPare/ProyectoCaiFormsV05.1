@@ -37,7 +37,7 @@ namespace ProyectoCaiFormsV05._1.Archivos
         public static void GuardarTodos(List<Presupuesto> presupuestos)
         {
             string contenido = JsonConvert.SerializeObject(presupuestos);
-            File.WriteAllText("Cliente.json", contenido);            
+            File.WriteAllText("Presupuestos.json", contenido);            
         }
 
     }
